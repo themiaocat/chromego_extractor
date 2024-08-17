@@ -30,6 +30,96 @@ proxies:
   - 1.1.1.1
   - 8.8.8.8
   dialer-proxy: ☁ WARP前置节点
+- name: 🇺🇸 US-hysteria | 0-1
+  type: hysteria
+  server: hy2.dtku47.xyz
+  port: 15566
+  auth-str: jQrGpwSqp34P
+  alpn:
+  - h3
+  protocol: udp
+  up: 50 Mbps
+  down: 100 Mbps
+- name: 🇺🇸 US-hysteria | 1-1
+  type: hysteria
+  server: clash1.dtku47.xyz
+  port: 11223
+  auth-str: O5tQQiW2xKf5
+  alpn:
+  - h3
+  protocol: udp
+  up: 50 Mbps
+  down: 100 Mbps
+- name: 🏳 Unknown-vmess | 3-1
+  type: vmess
+  server: 104.26.9.22
+  port: 8080
+  cipher: auto
+  uuid: ef8c954e-014f-4b36-8273-9b5086afab34
+  alterId: 0
+  tls: false
+  skip-cert-verify: true
+  servername: dual-nothing-prep-exit.trycloudflare.com
+  network: ws
+  ws-opts:
+    path: ef8c954e-014f-4b36-8273-9b5086afab34-vm
+    headers:
+      host: dual-nothing-prep-exit.trycloudflare.com
+- name: 🇺🇸 US-vmess | 3-2
+  type: vmess
+  server: 172.64.97.235
+  port: 8080
+  cipher: auto
+  uuid: ef8c954e-014f-4b36-8273-9b5086afab34
+  alterId: 0
+  tls: false
+  skip-cert-verify: true
+  servername: dual-nothing-prep-exit.trycloudflare.com
+  network: ws
+  ws-opts:
+    path: ef8c954e-014f-4b36-8273-9b5086afab34-vm
+    headers:
+      host: dual-nothing-prep-exit.trycloudflare.com
+- name: 🏳 Unknown-vmess | 3-3
+  type: vmess
+  server: 104.19.38.28
+  port: 8080
+  cipher: auto
+  uuid: ef8c954e-014f-4b36-8273-9b5086afab34
+  alterId: 0
+  tls: false
+  skip-cert-verify: true
+  servername: dual-nothing-prep-exit.trycloudflare.com
+  network: ws
+  ws-opts:
+    path: ef8c954e-014f-4b36-8273-9b5086afab34-vm
+    headers:
+      host: dual-nothing-prep-exit.trycloudflare.com
+- name: 🏳 Unknown-vmess | 3-4
+  type: vmess
+  server: 104.19.38.48
+  port: 8080
+  cipher: auto
+  uuid: ef8c954e-014f-4b36-8273-9b5086afab34
+  alterId: 0
+  tls: false
+  skip-cert-verify: true
+  servername: dual-nothing-prep-exit.trycloudflare.com
+  network: ws
+  ws-opts:
+    path: ef8c954e-014f-4b36-8273-9b5086afab34-vm
+    headers:
+      host: dual-nothing-prep-exit.trycloudflare.com
+- name: 🇺🇸 US-hysteria | 5-1
+  type: hysteria
+  server: hy1.dtku47.xyz
+  port: 22334
+  auth-str: lASdKzWK0VxL
+  alpn:
+  - h3
+  protocol: udp
+  up: 50 Mbps
+  down: 100 Mbps
 - name: 🇺🇸 US-Hysteria | 0-0
   type: hysteria
   server: 91.149.239.23
@@ -152,6 +242,13 @@ proxy-groups:
   - ♻️ 自动选择
   - 🎯 全球直连
   - ☁ WARP
+  - 🇺🇸 US-hysteria | 0-1
+  - 🇺🇸 US-hysteria | 1-1
+  - 🏳 Unknown-vmess | 3-1
+  - 🇺🇸 US-vmess | 3-2
+  - 🏳 Unknown-vmess | 3-3
+  - 🏳 Unknown-vmess | 3-4
+  - 🇺🇸 US-hysteria | 5-1
   - 🇺🇸 US-Hysteria | 0-0
   - 🇺🇸 US-Hysteria | 1-0
   - 🇺🇸 US-Hysteria2 | 0-0
@@ -165,6 +262,13 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
+  - 🇺🇸 US-hysteria | 0-1
+  - 🇺🇸 US-hysteria | 1-1
+  - 🏳 Unknown-vmess | 3-1
+  - 🇺🇸 US-vmess | 3-2
+  - 🏳 Unknown-vmess | 3-3
+  - 🏳 Unknown-vmess | 3-4
+  - 🇺🇸 US-hysteria | 5-1
   - 🇺🇸 US-Hysteria | 0-0
   - 🇺🇸 US-Hysteria | 1-0
   - 🇺🇸 US-Hysteria2 | 0-0
@@ -178,6 +282,13 @@ proxy-groups:
   interval: 300
   strategy: consistent-hashing
   proxies:
+  - 🇺🇸 US-hysteria | 0-1
+  - 🇺🇸 US-hysteria | 1-1
+  - 🏳 Unknown-vmess | 3-1
+  - 🇺🇸 US-vmess | 3-2
+  - 🏳 Unknown-vmess | 3-3
+  - 🏳 Unknown-vmess | 3-4
+  - 🇺🇸 US-hysteria | 5-1
   - 🇺🇸 US-Hysteria | 0-0
   - 🇺🇸 US-Hysteria | 1-0
   - 🇺🇸 US-Hysteria2 | 0-0
@@ -191,6 +302,13 @@ proxy-groups:
   - ⚖ 负载均衡
   - ♻️ 自动选择
   - 🎯 全球直连
+  - 🇺🇸 US-hysteria | 0-1
+  - 🇺🇸 US-hysteria | 1-1
+  - 🏳 Unknown-vmess | 3-1
+  - 🇺🇸 US-vmess | 3-2
+  - 🏳 Unknown-vmess | 3-3
+  - 🏳 Unknown-vmess | 3-4
+  - 🇺🇸 US-hysteria | 5-1
   - 🇺🇸 US-Hysteria | 0-0
   - 🇺🇸 US-Hysteria | 1-0
   - 🇺🇸 US-Hysteria2 | 0-0
@@ -204,6 +322,13 @@ proxy-groups:
   - 🚀 节点选择
   - 🎯 全球直连
   - ☁ WARP
+  - 🇺🇸 US-hysteria | 0-1
+  - 🇺🇸 US-hysteria | 1-1
+  - 🏳 Unknown-vmess | 3-1
+  - 🇺🇸 US-vmess | 3-2
+  - 🏳 Unknown-vmess | 3-3
+  - 🏳 Unknown-vmess | 3-4
+  - 🇺🇸 US-hysteria | 5-1
   - 🇺🇸 US-Hysteria | 0-0
   - 🇺🇸 US-Hysteria | 1-0
   - 🇺🇸 US-Hysteria2 | 0-0
@@ -217,6 +342,13 @@ proxy-groups:
   - 🎯 全球直连
   - 🚀 节点选择
   - ☁ WARP
+  - 🇺🇸 US-hysteria | 0-1
+  - 🇺🇸 US-hysteria | 1-1
+  - 🏳 Unknown-vmess | 3-1
+  - 🇺🇸 US-vmess | 3-2
+  - 🏳 Unknown-vmess | 3-3
+  - 🏳 Unknown-vmess | 3-4
+  - 🇺🇸 US-hysteria | 5-1
   - 🇺🇸 US-Hysteria | 0-0
   - 🇺🇸 US-Hysteria | 1-0
   - 🇺🇸 US-Hysteria2 | 0-0
@@ -230,6 +362,13 @@ proxy-groups:
   - 🎯 全球直连
   - 🚀 节点选择
   - ☁ WARP
+  - 🇺🇸 US-hysteria | 0-1
+  - 🇺🇸 US-hysteria | 1-1
+  - 🏳 Unknown-vmess | 3-1
+  - 🇺🇸 US-vmess | 3-2
+  - 🏳 Unknown-vmess | 3-3
+  - 🏳 Unknown-vmess | 3-4
+  - 🇺🇸 US-hysteria | 5-1
   - 🇺🇸 US-Hysteria | 0-0
   - 🇺🇸 US-Hysteria | 1-0
   - 🇺🇸 US-Hysteria2 | 0-0
@@ -243,6 +382,13 @@ proxy-groups:
   - 🚀 节点选择
   - 🎯 全球直连
   - ☁ WARP
+  - 🇺🇸 US-hysteria | 0-1
+  - 🇺🇸 US-hysteria | 1-1
+  - 🏳 Unknown-vmess | 3-1
+  - 🇺🇸 US-vmess | 3-2
+  - 🏳 Unknown-vmess | 3-3
+  - 🏳 Unknown-vmess | 3-4
+  - 🇺🇸 US-hysteria | 5-1
   - 🇺🇸 US-Hysteria | 0-0
   - 🇺🇸 US-Hysteria | 1-0
   - 🇺🇸 US-Hysteria2 | 0-0
@@ -256,6 +402,13 @@ proxy-groups:
   - 🚀 节点选择
   - 🎯 全球直连
   - ☁ WARP
+  - 🇺🇸 US-hysteria | 0-1
+  - 🇺🇸 US-hysteria | 1-1
+  - 🏳 Unknown-vmess | 3-1
+  - 🇺🇸 US-vmess | 3-2
+  - 🏳 Unknown-vmess | 3-3
+  - 🏳 Unknown-vmess | 3-4
+  - 🇺🇸 US-hysteria | 5-1
   - 🇺🇸 US-Hysteria | 0-0
   - 🇺🇸 US-Hysteria | 1-0
   - 🇺🇸 US-Hysteria2 | 0-0
@@ -269,6 +422,13 @@ proxy-groups:
   - 🎯 全球直连
   - 🚀 节点选择
   - ☁ WARP
+  - 🇺🇸 US-hysteria | 0-1
+  - 🇺🇸 US-hysteria | 1-1
+  - 🏳 Unknown-vmess | 3-1
+  - 🇺🇸 US-vmess | 3-2
+  - 🏳 Unknown-vmess | 3-3
+  - 🏳 Unknown-vmess | 3-4
+  - 🇺🇸 US-hysteria | 5-1
   - 🇺🇸 US-Hysteria | 0-0
   - 🇺🇸 US-Hysteria | 1-0
   - 🇺🇸 US-Hysteria2 | 0-0
@@ -282,6 +442,13 @@ proxy-groups:
   - 🎯 全球直连
   - 🚀 节点选择
   - ☁ WARP
+  - 🇺🇸 US-hysteria | 0-1
+  - 🇺🇸 US-hysteria | 1-1
+  - 🏳 Unknown-vmess | 3-1
+  - 🇺🇸 US-vmess | 3-2
+  - 🏳 Unknown-vmess | 3-3
+  - 🏳 Unknown-vmess | 3-4
+  - 🇺🇸 US-hysteria | 5-1
   - 🇺🇸 US-Hysteria | 0-0
   - 🇺🇸 US-Hysteria | 1-0
   - 🇺🇸 US-Hysteria2 | 0-0
@@ -295,6 +462,13 @@ proxy-groups:
   - 🚀 节点选择
   - 🎯 全球直连
   - ☁ WARP
+  - 🇺🇸 US-hysteria | 0-1
+  - 🇺🇸 US-hysteria | 1-1
+  - 🏳 Unknown-vmess | 3-1
+  - 🇺🇸 US-vmess | 3-2
+  - 🏳 Unknown-vmess | 3-3
+  - 🏳 Unknown-vmess | 3-4
+  - 🇺🇸 US-hysteria | 5-1
   - 🇺🇸 US-Hysteria | 0-0
   - 🇺🇸 US-Hysteria | 1-0
   - 🇺🇸 US-Hysteria2 | 0-0
@@ -308,6 +482,13 @@ proxy-groups:
   - 🚀 节点选择
   - 🎯 全球直连
   - ☁ WARP
+  - 🇺🇸 US-hysteria | 0-1
+  - 🇺🇸 US-hysteria | 1-1
+  - 🏳 Unknown-vmess | 3-1
+  - 🇺🇸 US-vmess | 3-2
+  - 🏳 Unknown-vmess | 3-3
+  - 🏳 Unknown-vmess | 3-4
+  - 🇺🇸 US-hysteria | 5-1
   - 🇺🇸 US-Hysteria | 0-0
   - 🇺🇸 US-Hysteria | 1-0
   - 🇺🇸 US-Hysteria2 | 0-0
@@ -321,6 +502,13 @@ proxy-groups:
   - 🚀 节点选择
   - 🎯 全球直连
   - ☁ WARP
+  - 🇺🇸 US-hysteria | 0-1
+  - 🇺🇸 US-hysteria | 1-1
+  - 🏳 Unknown-vmess | 3-1
+  - 🇺🇸 US-vmess | 3-2
+  - 🏳 Unknown-vmess | 3-3
+  - 🏳 Unknown-vmess | 3-4
+  - 🇺🇸 US-hysteria | 5-1
   - 🇺🇸 US-Hysteria | 0-0
   - 🇺🇸 US-Hysteria | 1-0
   - 🇺🇸 US-Hysteria2 | 0-0
@@ -343,6 +531,13 @@ proxy-groups:
   - 🚀 节点选择
   - 🎯 全球直连
   - ☁ WARP
+  - 🇺🇸 US-hysteria | 0-1
+  - 🇺🇸 US-hysteria | 1-1
+  - 🏳 Unknown-vmess | 3-1
+  - 🇺🇸 US-vmess | 3-2
+  - 🏳 Unknown-vmess | 3-3
+  - 🏳 Unknown-vmess | 3-4
+  - 🇺🇸 US-hysteria | 5-1
   - 🇺🇸 US-Hysteria | 0-0
   - 🇺🇸 US-Hysteria | 1-0
   - 🇺🇸 US-Hysteria2 | 0-0
