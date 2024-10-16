@@ -10,69 +10,416 @@ clash-for-android:
 profile:
   tracing: true
 global-client-fingerprint: chrome
-proxies: []
+proxies:
+- name: 🇺🇸 US-hysteria | 0-1
+  type: hysteria
+  server: hy2.dtku47.xyz
+  port: 15566
+  auth-str: jQrGpwSqp34P
+  alpn:
+  - h3
+  protocol: udp
+  up: 50 Mbps
+  down: 100 Mbps
+- name: 🇺🇸 US-hysteria | 1-1
+  type: hysteria
+  server: clash1.dtku47.xyz
+  port: 11223
+  auth-str: O5tQQiW2xKf5
+  alpn:
+  - h3
+  protocol: udp
+  up: 50 Mbps
+  down: 100 Mbps
+- name: 🏳 Unknown-vmess | 4-1
+  type: vmess
+  server: 104.26.9.22
+  port: 8080
+  cipher: auto
+  uuid: ef8c954e-014f-4b36-8273-9b5086afab34
+  alterId: 0
+  tls: false
+  skip-cert-verify: true
+  servername: dual-nothing-prep-exit.trycloudflare.com
+  network: ws
+  ws-opts:
+    path: ef8c954e-014f-4b36-8273-9b5086afab34-vm
+    headers:
+      host: dual-nothing-prep-exit.trycloudflare.com
+- name: 🇺🇸 US-vmess | 4-2
+  type: vmess
+  server: 172.64.97.235
+  port: 8080
+  cipher: auto
+  uuid: ef8c954e-014f-4b36-8273-9b5086afab34
+  alterId: 0
+  tls: false
+  skip-cert-verify: true
+  servername: dual-nothing-prep-exit.trycloudflare.com
+  network: ws
+  ws-opts:
+    path: ef8c954e-014f-4b36-8273-9b5086afab34-vm
+    headers:
+      host: dual-nothing-prep-exit.trycloudflare.com
+- name: 🏳 Unknown-vmess | 4-3
+  type: vmess
+  server: 104.19.38.28
+  port: 8080
+  cipher: auto
+  uuid: ef8c954e-014f-4b36-8273-9b5086afab34
+  alterId: 0
+  tls: false
+  skip-cert-verify: true
+  servername: dual-nothing-prep-exit.trycloudflare.com
+  network: ws
+  ws-opts:
+    path: ef8c954e-014f-4b36-8273-9b5086afab34-vm
+    headers:
+      host: dual-nothing-prep-exit.trycloudflare.com
+- name: 🏳 Unknown-vmess | 4-4
+  type: vmess
+  server: 104.19.38.48
+  port: 8080
+  cipher: auto
+  uuid: ef8c954e-014f-4b36-8273-9b5086afab34
+  alterId: 0
+  tls: false
+  skip-cert-verify: true
+  servername: dual-nothing-prep-exit.trycloudflare.com
+  network: ws
+  ws-opts:
+    path: ef8c954e-014f-4b36-8273-9b5086afab34-vm
+    headers:
+      host: dual-nothing-prep-exit.trycloudflare.com
+- name: 🇺🇸 US-hysteria | 5-1
+  type: hysteria
+  server: hy1.dtku47.xyz
+  port: 22334
+  auth-str: lASdKzWK0VxL
+  alpn:
+  - h3
+  protocol: udp
+  up: 50 Mbps
+  down: 100 Mbps
+- name: 🇷🇺 RU-Hysteria | 0-0
+  type: hysteria
+  server: 46.17.43.223
+  port: 12311
+  ports: 12311
+  auth-str: dongtaiwang.com
+  up: 80
+  down: 100
+  fast-open: true
+  protocol: udp
+  sni: bing.com
+  skip-cert-verify: true
+  alpn:
+  - h3
+- name: 🇷🇺 RU-Hysteria2 | 0-0
+  type: hysteria2
+  server: 185.22.152.93
+  port: 33713
+  password: dongtaiwang.com
+  sni: www.bing.com
+  skip-cert-verify: true
+- name: 🏳 Unknown-vmess | 0-0
+  type: vmess
+  server: 104.21.238.35
+  port: 2086
+  uuid: ee420fda-efb7-48a8-9249-8987e36ebd9e
+  alterId: 0
+  cipher: auto
+  tls: false
+  servername: ''
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: github.com/Alvin9999
+    headers:
+      Host: ip13.9447609.xyz
+  grpc-opts:
+    serviceName: /
+  h2-opts:
+    path: /
+    host: []
+- name: 🏳 Unknown-vmess | 1-0
+  type: vmess
+  server: 104.21.238.38
+  port: 2086
+  uuid: ee420fda-efb7-48a8-9249-8987e36ebd9e
+  alterId: 0
+  cipher: auto
+  tls: false
+  servername: ''
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: github.com/Alvin9999
+    headers:
+      Host: ip13.9447609.xyz
+  grpc-opts:
+    serviceName: /
+  h2-opts:
+    path: /
+    host: []
+- name: 🏳 Unknown-vmess | 2-0
+  type: vmess
+  server: 104.21.238.37
+  port: 2086
+  uuid: ee420fda-efb7-48a8-9249-8987e36ebd9e
+  alterId: 0
+  cipher: auto
+  tls: false
+  servername: ''
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: github.com/Alvin9999
+    headers:
+      Host: ip13.9447609.xyz
+  grpc-opts:
+    serviceName: /
+  h2-opts:
+    path: /
+    host: []
+- name: 🏳 Unknown-vmess | 3-0
+  type: vmess
+  server: 104.21.238.36
+  port: 2086
+  uuid: ee420fda-efb7-48a8-9249-8987e36ebd9e
+  alterId: 0
+  cipher: auto
+  tls: false
+  servername: ''
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: github.com/Alvin9999
+    headers:
+      Host: ip13.9447609.xyz
+  grpc-opts:
+    serviceName: /
+  h2-opts:
+    path: /
+    host: []
 proxy-groups:
 - name: 🚀 节点选择
   type: select
   proxies:
   - ♻️ 自动选择
   - 🎯 全球直连
+  - 🇺🇸 US-hysteria | 0-1
+  - 🇺🇸 US-hysteria | 1-1
+  - 🏳 Unknown-vmess | 4-1
+  - 🇺🇸 US-vmess | 4-2
+  - 🏳 Unknown-vmess | 4-3
+  - 🏳 Unknown-vmess | 4-4
+  - 🇺🇸 US-hysteria | 5-1
+  - 🇷🇺 RU-Hysteria | 0-0
+  - 🇷🇺 RU-Hysteria2 | 0-0
+  - 🏳 Unknown-vmess | 0-0
+  - 🏳 Unknown-vmess | 1-0
+  - 🏳 Unknown-vmess | 2-0
+  - 🏳 Unknown-vmess | 3-0
 - name: ♻️ 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
-  proxies: []
+  proxies:
+  - 🇺🇸 US-hysteria | 0-1
+  - 🇺🇸 US-hysteria | 1-1
+  - 🏳 Unknown-vmess | 4-1
+  - 🇺🇸 US-vmess | 4-2
+  - 🏳 Unknown-vmess | 4-3
+  - 🏳 Unknown-vmess | 4-4
+  - 🇺🇸 US-hysteria | 5-1
+  - 🇷🇺 RU-Hysteria | 0-0
+  - 🇷🇺 RU-Hysteria2 | 0-0
+  - 🏳 Unknown-vmess | 0-0
+  - 🏳 Unknown-vmess | 1-0
+  - 🏳 Unknown-vmess | 2-0
+  - 🏳 Unknown-vmess | 3-0
 - name: 📺 巴哈姆特
   type: select
   proxies:
   - 🚀 节点选择
   - 🎯 全球直连
+  - 🇺🇸 US-hysteria | 0-1
+  - 🇺🇸 US-hysteria | 1-1
+  - 🏳 Unknown-vmess | 4-1
+  - 🇺🇸 US-vmess | 4-2
+  - 🏳 Unknown-vmess | 4-3
+  - 🏳 Unknown-vmess | 4-4
+  - 🇺🇸 US-hysteria | 5-1
+  - 🇷🇺 RU-Hysteria | 0-0
+  - 🇷🇺 RU-Hysteria2 | 0-0
+  - 🏳 Unknown-vmess | 0-0
+  - 🏳 Unknown-vmess | 1-0
+  - 🏳 Unknown-vmess | 2-0
+  - 🏳 Unknown-vmess | 3-0
 - name: 📺 哔哩哔哩
   type: select
   proxies:
   - 🎯 全球直连
   - 🚀 节点选择
+  - 🇺🇸 US-hysteria | 0-1
+  - 🇺🇸 US-hysteria | 1-1
+  - 🏳 Unknown-vmess | 4-1
+  - 🇺🇸 US-vmess | 4-2
+  - 🏳 Unknown-vmess | 4-3
+  - 🏳 Unknown-vmess | 4-4
+  - 🇺🇸 US-hysteria | 5-1
+  - 🇷🇺 RU-Hysteria | 0-0
+  - 🇷🇺 RU-Hysteria2 | 0-0
+  - 🏳 Unknown-vmess | 0-0
+  - 🏳 Unknown-vmess | 1-0
+  - 🏳 Unknown-vmess | 2-0
+  - 🏳 Unknown-vmess | 3-0
 - name: 🌏 国内媒体
   type: select
   proxies:
   - 🎯 全球直连
   - 🚀 节点选择
+  - 🇺🇸 US-hysteria | 0-1
+  - 🇺🇸 US-hysteria | 1-1
+  - 🏳 Unknown-vmess | 4-1
+  - 🇺🇸 US-vmess | 4-2
+  - 🏳 Unknown-vmess | 4-3
+  - 🏳 Unknown-vmess | 4-4
+  - 🇺🇸 US-hysteria | 5-1
+  - 🇷🇺 RU-Hysteria | 0-0
+  - 🇷🇺 RU-Hysteria2 | 0-0
+  - 🏳 Unknown-vmess | 0-0
+  - 🏳 Unknown-vmess | 1-0
+  - 🏳 Unknown-vmess | 2-0
+  - 🏳 Unknown-vmess | 3-0
 - name: 🌍 国外媒体
   type: select
   proxies:
   - 🚀 节点选择
   - 🎯 全球直连
+  - 🇺🇸 US-hysteria | 0-1
+  - 🇺🇸 US-hysteria | 1-1
+  - 🏳 Unknown-vmess | 4-1
+  - 🇺🇸 US-vmess | 4-2
+  - 🏳 Unknown-vmess | 4-3
+  - 🏳 Unknown-vmess | 4-4
+  - 🇺🇸 US-hysteria | 5-1
+  - 🇷🇺 RU-Hysteria | 0-0
+  - 🇷🇺 RU-Hysteria2 | 0-0
+  - 🏳 Unknown-vmess | 0-0
+  - 🏳 Unknown-vmess | 1-0
+  - 🏳 Unknown-vmess | 2-0
+  - 🏳 Unknown-vmess | 3-0
 - name: 📲 电报信息
   type: select
   proxies:
   - 🚀 节点选择
   - 🎯 全球直连
+  - 🇺🇸 US-hysteria | 0-1
+  - 🇺🇸 US-hysteria | 1-1
+  - 🏳 Unknown-vmess | 4-1
+  - 🇺🇸 US-vmess | 4-2
+  - 🏳 Unknown-vmess | 4-3
+  - 🏳 Unknown-vmess | 4-4
+  - 🇺🇸 US-hysteria | 5-1
+  - 🇷🇺 RU-Hysteria | 0-0
+  - 🇷🇺 RU-Hysteria2 | 0-0
+  - 🏳 Unknown-vmess | 0-0
+  - 🏳 Unknown-vmess | 1-0
+  - 🏳 Unknown-vmess | 2-0
+  - 🏳 Unknown-vmess | 3-0
 - name: Ⓜ️ 微软云盘
   type: select
   proxies:
   - 🎯 全球直连
   - 🚀 节点选择
+  - 🇺🇸 US-hysteria | 0-1
+  - 🇺🇸 US-hysteria | 1-1
+  - 🏳 Unknown-vmess | 4-1
+  - 🇺🇸 US-vmess | 4-2
+  - 🏳 Unknown-vmess | 4-3
+  - 🏳 Unknown-vmess | 4-4
+  - 🇺🇸 US-hysteria | 5-1
+  - 🇷🇺 RU-Hysteria | 0-0
+  - 🇷🇺 RU-Hysteria2 | 0-0
+  - 🏳 Unknown-vmess | 0-0
+  - 🏳 Unknown-vmess | 1-0
+  - 🏳 Unknown-vmess | 2-0
+  - 🏳 Unknown-vmess | 3-0
 - name: Ⓜ️ 微软服务
   type: select
   proxies:
   - 🎯 全球直连
   - 🚀 节点选择
+  - 🇺🇸 US-hysteria | 0-1
+  - 🇺🇸 US-hysteria | 1-1
+  - 🏳 Unknown-vmess | 4-1
+  - 🇺🇸 US-vmess | 4-2
+  - 🏳 Unknown-vmess | 4-3
+  - 🏳 Unknown-vmess | 4-4
+  - 🇺🇸 US-hysteria | 5-1
+  - 🇷🇺 RU-Hysteria | 0-0
+  - 🇷🇺 RU-Hysteria2 | 0-0
+  - 🏳 Unknown-vmess | 0-0
+  - 🏳 Unknown-vmess | 1-0
+  - 🏳 Unknown-vmess | 2-0
+  - 🏳 Unknown-vmess | 3-0
 - name: 🍎 苹果服务
   type: select
   proxies:
   - 🚀 节点选择
   - 🎯 全球直连
+  - 🇺🇸 US-hysteria | 0-1
+  - 🇺🇸 US-hysteria | 1-1
+  - 🏳 Unknown-vmess | 4-1
+  - 🇺🇸 US-vmess | 4-2
+  - 🏳 Unknown-vmess | 4-3
+  - 🏳 Unknown-vmess | 4-4
+  - 🇺🇸 US-hysteria | 5-1
+  - 🇷🇺 RU-Hysteria | 0-0
+  - 🇷🇺 RU-Hysteria2 | 0-0
+  - 🏳 Unknown-vmess | 0-0
+  - 🏳 Unknown-vmess | 1-0
+  - 🏳 Unknown-vmess | 2-0
+  - 🏳 Unknown-vmess | 3-0
 - name: 📢 谷歌FCM
   type: select
   proxies:
   - 🚀 节点选择
   - 🎯 全球直连
+  - 🇺🇸 US-hysteria | 0-1
+  - 🇺🇸 US-hysteria | 1-1
+  - 🏳 Unknown-vmess | 4-1
+  - 🇺🇸 US-vmess | 4-2
+  - 🏳 Unknown-vmess | 4-3
+  - 🏳 Unknown-vmess | 4-4
+  - 🇺🇸 US-hysteria | 5-1
+  - 🇷🇺 RU-Hysteria | 0-0
+  - 🇷🇺 RU-Hysteria2 | 0-0
+  - 🏳 Unknown-vmess | 0-0
+  - 🏳 Unknown-vmess | 1-0
+  - 🏳 Unknown-vmess | 2-0
+  - 🏳 Unknown-vmess | 3-0
 - name: 🤖 OpenAI
   type: select
   proxies:
   - 🚀 节点选择
   - 🎯 全球直连
+  - 🇺🇸 US-hysteria | 0-1
+  - 🇺🇸 US-hysteria | 1-1
+  - 🏳 Unknown-vmess | 4-1
+  - 🇺🇸 US-vmess | 4-2
+  - 🏳 Unknown-vmess | 4-3
+  - 🏳 Unknown-vmess | 4-4
+  - 🇺🇸 US-hysteria | 5-1
+  - 🇷🇺 RU-Hysteria | 0-0
+  - 🇷🇺 RU-Hysteria2 | 0-0
+  - 🏳 Unknown-vmess | 0-0
+  - 🏳 Unknown-vmess | 1-0
+  - 🏳 Unknown-vmess | 2-0
+  - 🏳 Unknown-vmess | 3-0
 - name: 🎯 全球直连
   type: select
   proxies:
@@ -87,6 +434,19 @@ proxy-groups:
   proxies:
   - 🚀 节点选择
   - 🎯 全球直连
+  - 🇺🇸 US-hysteria | 0-1
+  - 🇺🇸 US-hysteria | 1-1
+  - 🏳 Unknown-vmess | 4-1
+  - 🇺🇸 US-vmess | 4-2
+  - 🏳 Unknown-vmess | 4-3
+  - 🏳 Unknown-vmess | 4-4
+  - 🇺🇸 US-hysteria | 5-1
+  - 🇷🇺 RU-Hysteria | 0-0
+  - 🇷🇺 RU-Hysteria2 | 0-0
+  - 🏳 Unknown-vmess | 0-0
+  - 🏳 Unknown-vmess | 1-0
+  - 🏳 Unknown-vmess | 2-0
+  - 🏳 Unknown-vmess | 3-0
 rules:
 - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
 - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
