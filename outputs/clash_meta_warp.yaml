@@ -120,21 +120,7 @@ proxies:
   protocol: udp
   up: 50 Mbps
   down: 100 Mbps
-- name: 🇫🇷 FR-Hysteria | 0-0
-  type: hysteria
-  server: 62.210.8.63
-  port: 2345
-  ports: 2345
-  auth-str: dongtaiwang.com
-  up: 80
-  down: 100
-  fast-open: true
-  protocol: udp
-  sni: bing.com
-  skip-cert-verify: true
-  alpn:
-  - h3
-- name: 🇷🇺 RU-Hysteria | 1-0
+- name: 🇷🇺 RU-Hysteria | 0-0
   type: hysteria
   server: 46.17.43.223
   port: 12311
@@ -249,8 +235,7 @@ proxy-groups:
   - 🏳 Unknown-vmess | 4-3
   - 🏳 Unknown-vmess | 4-4
   - 🇺🇸 US-hysteria | 5-1
-  - 🇫🇷 FR-Hysteria | 0-0
-  - 🇷🇺 RU-Hysteria | 1-0
+  - 🇷🇺 RU-Hysteria | 0-0
   - 🇷🇺 RU-Hysteria2 | 0-0
   - 🏳 Unknown-vmess | 0-0
   - 🏳 Unknown-vmess | 1-0
@@ -269,8 +254,7 @@ proxy-groups:
   - 🏳 Unknown-vmess | 4-3
   - 🏳 Unknown-vmess | 4-4
   - 🇺🇸 US-hysteria | 5-1
-  - 🇫🇷 FR-Hysteria | 0-0
-  - 🇷🇺 RU-Hysteria | 1-0
+  - 🇷🇺 RU-Hysteria | 0-0
   - 🇷🇺 RU-Hysteria2 | 0-0
   - 🏳 Unknown-vmess | 0-0
   - 🏳 Unknown-vmess | 1-0
@@ -289,8 +273,7 @@ proxy-groups:
   - 🏳 Unknown-vmess | 4-3
   - 🏳 Unknown-vmess | 4-4
   - 🇺🇸 US-hysteria | 5-1
-  - 🇫🇷 FR-Hysteria | 0-0
-  - 🇷🇺 RU-Hysteria | 1-0
+  - 🇷🇺 RU-Hysteria | 0-0
   - 🇷🇺 RU-Hysteria2 | 0-0
   - 🏳 Unknown-vmess | 0-0
   - 🏳 Unknown-vmess | 1-0
@@ -309,8 +292,7 @@ proxy-groups:
   - 🏳 Unknown-vmess | 4-3
   - 🏳 Unknown-vmess | 4-4
   - 🇺🇸 US-hysteria | 5-1
-  - 🇫🇷 FR-Hysteria | 0-0
-  - 🇷🇺 RU-Hysteria | 1-0
+  - 🇷🇺 RU-Hysteria | 0-0
   - 🇷🇺 RU-Hysteria2 | 0-0
   - 🏳 Unknown-vmess | 0-0
   - 🏳 Unknown-vmess | 1-0
@@ -329,8 +311,7 @@ proxy-groups:
   - 🏳 Unknown-vmess | 4-3
   - 🏳 Unknown-vmess | 4-4
   - 🇺🇸 US-hysteria | 5-1
-  - 🇫🇷 FR-Hysteria | 0-0
-  - 🇷🇺 RU-Hysteria | 1-0
+  - 🇷🇺 RU-Hysteria | 0-0
   - 🇷🇺 RU-Hysteria2 | 0-0
   - 🏳 Unknown-vmess | 0-0
   - 🏳 Unknown-vmess | 1-0
@@ -349,8 +330,7 @@ proxy-groups:
   - 🏳 Unknown-vmess | 4-3
   - 🏳 Unknown-vmess | 4-4
   - 🇺🇸 US-hysteria | 5-1
-  - 🇫🇷 FR-Hysteria | 0-0
-  - 🇷🇺 RU-Hysteria | 1-0
+  - 🇷🇺 RU-Hysteria | 0-0
   - 🇷🇺 RU-Hysteria2 | 0-0
   - 🏳 Unknown-vmess | 0-0
   - 🏳 Unknown-vmess | 1-0
@@ -369,8 +349,7 @@ proxy-groups:
   - 🏳 Unknown-vmess | 4-3
   - 🏳 Unknown-vmess | 4-4
   - 🇺🇸 US-hysteria | 5-1
-  - 🇫🇷 FR-Hysteria | 0-0
-  - 🇷🇺 RU-Hysteria | 1-0
+  - 🇷🇺 RU-Hysteria | 0-0
   - 🇷🇺 RU-Hysteria2 | 0-0
   - 🏳 Unknown-vmess | 0-0
   - 🏳 Unknown-vmess | 1-0
@@ -389,8 +368,7 @@ proxy-groups:
   - 🏳 Unknown-vmess | 4-3
   - 🏳 Unknown-vmess | 4-4
   - 🇺🇸 US-hysteria | 5-1
-  - 🇫🇷 FR-Hysteria | 0-0
-  - 🇷🇺 RU-Hysteria | 1-0
+  - 🇷🇺 RU-Hysteria | 0-0
   - 🇷🇺 RU-Hysteria2 | 0-0
   - 🏳 Unknown-vmess | 0-0
   - 🏳 Unknown-vmess | 1-0
@@ -409,8 +387,7 @@ proxy-groups:
   - 🏳 Unknown-vmess | 4-3
   - 🏳 Unknown-vmess | 4-4
   - 🇺🇸 US-hysteria | 5-1
-  - 🇫🇷 FR-Hysteria | 0-0
-  - 🇷🇺 RU-Hysteria | 1-0
+  - 🇷🇺 RU-Hysteria | 0-0
   - 🇷🇺 RU-Hysteria2 | 0-0
   - 🏳 Unknown-vmess | 0-0
   - 🏳 Unknown-vmess | 1-0
@@ -429,8 +406,7 @@ proxy-groups:
   - 🏳 Unknown-vmess | 4-3
   - 🏳 Unknown-vmess | 4-4
   - 🇺🇸 US-hysteria | 5-1
-  - 🇫🇷 FR-Hysteria | 0-0
-  - 🇷🇺 RU-Hysteria | 1-0
+  - 🇷🇺 RU-Hysteria | 0-0
   - 🇷🇺 RU-Hysteria2 | 0-0
   - 🏳 Unknown-vmess | 0-0
   - 🏳 Unknown-vmess | 1-0
@@ -449,8 +425,7 @@ proxy-groups:
   - 🏳 Unknown-vmess | 4-3
   - 🏳 Unknown-vmess | 4-4
   - 🇺🇸 US-hysteria | 5-1
-  - 🇫🇷 FR-Hysteria | 0-0
-  - 🇷🇺 RU-Hysteria | 1-0
+  - 🇷🇺 RU-Hysteria | 0-0
   - 🇷🇺 RU-Hysteria2 | 0-0
   - 🏳 Unknown-vmess | 0-0
   - 🏳 Unknown-vmess | 1-0
@@ -469,8 +444,7 @@ proxy-groups:
   - 🏳 Unknown-vmess | 4-3
   - 🏳 Unknown-vmess | 4-4
   - 🇺🇸 US-hysteria | 5-1
-  - 🇫🇷 FR-Hysteria | 0-0
-  - 🇷🇺 RU-Hysteria | 1-0
+  - 🇷🇺 RU-Hysteria | 0-0
   - 🇷🇺 RU-Hysteria2 | 0-0
   - 🏳 Unknown-vmess | 0-0
   - 🏳 Unknown-vmess | 1-0
@@ -489,8 +463,7 @@ proxy-groups:
   - 🏳 Unknown-vmess | 4-3
   - 🏳 Unknown-vmess | 4-4
   - 🇺🇸 US-hysteria | 5-1
-  - 🇫🇷 FR-Hysteria | 0-0
-  - 🇷🇺 RU-Hysteria | 1-0
+  - 🇷🇺 RU-Hysteria | 0-0
   - 🇷🇺 RU-Hysteria2 | 0-0
   - 🏳 Unknown-vmess | 0-0
   - 🏳 Unknown-vmess | 1-0
@@ -509,8 +482,7 @@ proxy-groups:
   - 🏳 Unknown-vmess | 4-3
   - 🏳 Unknown-vmess | 4-4
   - 🇺🇸 US-hysteria | 5-1
-  - 🇫🇷 FR-Hysteria | 0-0
-  - 🇷🇺 RU-Hysteria | 1-0
+  - 🇷🇺 RU-Hysteria | 0-0
   - 🇷🇺 RU-Hysteria2 | 0-0
   - 🏳 Unknown-vmess | 0-0
   - 🏳 Unknown-vmess | 1-0
@@ -538,8 +510,7 @@ proxy-groups:
   - 🏳 Unknown-vmess | 4-3
   - 🏳 Unknown-vmess | 4-4
   - 🇺🇸 US-hysteria | 5-1
-  - 🇫🇷 FR-Hysteria | 0-0
-  - 🇷🇺 RU-Hysteria | 1-0
+  - 🇷🇺 RU-Hysteria | 0-0
   - 🇷🇺 RU-Hysteria2 | 0-0
   - 🏳 Unknown-vmess | 0-0
   - 🏳 Unknown-vmess | 1-0
