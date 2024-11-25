@@ -150,8 +150,8 @@ proxies:
   - h3
 - name: 🇷🇺 RU-Hysteria2 | 0-0
   type: hysteria2
-  server: 185.22.152.93
-  port: 47382
+  server: 46.17.41.189
+  port: 50717
   password: dongtaiwang.com
   sni: www.bing.com
   skip-cert-verify: true
@@ -169,7 +169,7 @@ proxies:
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: e5.9447609.xyz
+      Host: e1-1.9447609.xyz
   grpc-opts:
     serviceName: /
   h2-opts:
@@ -189,7 +189,7 @@ proxies:
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: e8.9447609.xyz
+      Host: e4-1.9447609.xyz
   grpc-opts:
     serviceName: /
   h2-opts:
@@ -209,7 +209,7 @@ proxies:
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: e7.9447609.xyz
+      Host: e3-1.9447609.xyz
   grpc-opts:
     serviceName: /
   h2-opts:
@@ -229,7 +229,7 @@ proxies:
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: e6.9447609.xyz
+      Host: e2-1.9447609.xyz
   grpc-opts:
     serviceName: /
   h2-opts:
