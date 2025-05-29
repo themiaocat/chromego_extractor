@@ -6,5 +6,7 @@ vmess://eyJ2IjogIjIiLCAicHMiOiAiXHVkODNjXHVkZmYzIFVua25vd24tdm1lc3MgfCA0LTMiLCAi
 vmess://eyJ2IjogIjIiLCAicHMiOiAiXHVkODNjXHVkZmYzIFVua25vd24tdm1lc3MgfCA0LTQiLCAiYWRkIjogIjEwNC4xOS4zOC40OCIsICJwb3J0IjogODA4MCwgImlkIjogImVmOGM5NTRlLTAxNGYtNGIzNi04MjczLTliNTA4NmFmYWIzNCIsICJhaWQiOiAwLCAibmV0IjogIndzIiwgInR5cGUiOiAibm9uZSIsICJob3N0IjogImR1YWwtbm90aGluZy1wcmVwLWV4aXQudHJ5Y2xvdWRmbGFyZS5jb20iLCAicGF0aCI6ICJlZjhjOTU0ZS0wMTRmLTRiMzYtODI3My05YjUwODZhZmFiMzQtdm0iLCAidGxzIjogIiIsICJzbmkiOiAiZHVhbC1ub3RoaW5nLXByZXAtZXhpdC50cnljbG91ZGZsYXJlLmNvbSIsICJhbHBuIjogIiJ9
 hysteria://hy1.dtku47.xyz:22334/?protocol=udp&insecure=0&peer=&auth=lASdKzWK0VxL&upmbps=50 Mbps&downmbps=100 Mbps&alpn=h3&obfs=#🇺🇸 US-hysteria | 5-1
 hysteria://185.22.155.71:10803/?protocol=udp&insecure=1&peer=apple.com&auth=dongtaiwang.com&upmbps=80&downmbps=100&alpn=h3&obfs=#🇷🇺 RU-Hysteria | 0-0
-hysteria2://dongtaiwang.com@hy2.694463.xyz:30033/?sni=www.bing.com&insecure=1#🇷🇺 RU-Hysteria2 | 0-0
+hysteria2://dongtaiwang.com@46.17.41.217:30033/?sni=www.bing.com&insecure=1#🇷🇺 RU-Hysteria2 | 0-0
+hysteria2://dongtaiwang.com@45.129.2.108:30033/?sni=www.bing.com&insecure=1#🇷🇺 RU-Hysteria2 | 1-0
+hysteria2://dongtaiwang.com@hy2.694463.xyz:30033/?sni=www.bing.com&insecure=1#🇷🇺 RU-Hysteria2 | 2-0
 vless://ec302de4-6b3d-4f03-a228-3c6d303ed370@1.162.51.106:37898?encryption=none&flow=xtls-rprx-vision&security=reality&sni=www.yahoo.com&fp=chrome&pbk=v6uWJJmVGFPd0K040QK3PJHCbPc74kXFoQmAhpu30jQ&sid=e12d7fdb&type=tcp&serviceName=/&host=&path=#🇨🇳 TW-vless | 0-0
