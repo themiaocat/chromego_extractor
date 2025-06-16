@@ -21,6 +21,16 @@ proxies:
   protocol: udp
   up: 50 Mbps
   down: 100 Mbps
+- name: 🇺🇸 US-hysteria | 1-1
+  type: hysteria
+  server: clash1.dtku47.xyz
+  port: 11223
+  auth-str: O5tQQiW2xKf5
+  alpn:
+  - h3
+  protocol: udp
+  up: 50 Mbps
+  down: 100 Mbps
 - name: 🏳 Unknown-vmess | 4-1
   type: vmess
   server: 104.26.9.22
@@ -148,6 +158,7 @@ proxy-groups:
   - ♻️ 自动选择
   - 🎯 全球直连
   - 🇺🇸 US-hysteria | 0-1
+  - 🇺🇸 US-hysteria | 1-1
   - 🏳 Unknown-vmess | 4-1
   - 🇺🇸 US-vmess | 4-2
   - 🏳 Unknown-vmess | 4-3
@@ -165,6 +176,7 @@ proxy-groups:
   tolerance: 50
   proxies:
   - 🇺🇸 US-hysteria | 0-1
+  - 🇺🇸 US-hysteria | 1-1
   - 🏳 Unknown-vmess | 4-1
   - 🇺🇸 US-vmess | 4-2
   - 🏳 Unknown-vmess | 4-3
@@ -181,6 +193,7 @@ proxy-groups:
   - 🚀 节点选择
   - 🎯 全球直连
   - 🇺🇸 US-hysteria | 0-1
+  - 🇺🇸 US-hysteria | 1-1
   - 🏳 Unknown-vmess | 4-1
   - 🇺🇸 US-vmess | 4-2
   - 🏳 Unknown-vmess | 4-3
@@ -197,6 +210,7 @@ proxy-groups:
   - 🎯 全球直连
   - 🚀 节点选择
   - 🇺🇸 US-hysteria | 0-1
+  - 🇺🇸 US-hysteria | 1-1
   - 🏳 Unknown-vmess | 4-1
   - 🇺🇸 US-vmess | 4-2
   - 🏳 Unknown-vmess | 4-3
@@ -213,6 +227,7 @@ proxy-groups:
   - 🎯 全球直连
   - 🚀 节点选择
   - 🇺🇸 US-hysteria | 0-1
+  - 🇺🇸 US-hysteria | 1-1
   - 🏳 Unknown-vmess | 4-1
   - 🇺🇸 US-vmess | 4-2
   - 🏳 Unknown-vmess | 4-3
@@ -229,6 +244,7 @@ proxy-groups:
   - 🚀 节点选择
   - 🎯 全球直连
   - 🇺🇸 US-hysteria | 0-1
+  - 🇺🇸 US-hysteria | 1-1
   - 🏳 Unknown-vmess | 4-1
   - 🇺🇸 US-vmess | 4-2
   - 🏳 Unknown-vmess | 4-3
@@ -245,6 +261,7 @@ proxy-groups:
   - 🚀 节点选择
   - 🎯 全球直连
   - 🇺🇸 US-hysteria | 0-1
+  - 🇺🇸 US-hysteria | 1-1
   - 🏳 Unknown-vmess | 4-1
   - 🇺🇸 US-vmess | 4-2
   - 🏳 Unknown-vmess | 4-3
@@ -261,6 +278,7 @@ proxy-groups:
   - 🎯 全球直连
   - 🚀 节点选择
   - 🇺🇸 US-hysteria | 0-1
+  - 🇺🇸 US-hysteria | 1-1
   - 🏳 Unknown-vmess | 4-1
   - 🇺🇸 US-vmess | 4-2
   - 🏳 Unknown-vmess | 4-3
@@ -277,6 +295,7 @@ proxy-groups:
   - 🎯 全球直连
   - 🚀 节点选择
   - 🇺🇸 US-hysteria | 0-1
+  - 🇺🇸 US-hysteria | 1-1
   - 🏳 Unknown-vmess | 4-1
   - 🇺🇸 US-vmess | 4-2
   - 🏳 Unknown-vmess | 4-3
@@ -293,6 +312,7 @@ proxy-groups:
   - 🚀 节点选择
   - 🎯 全球直连
   - 🇺🇸 US-hysteria | 0-1
+  - 🇺🇸 US-hysteria | 1-1
   - 🏳 Unknown-vmess | 4-1
   - 🇺🇸 US-vmess | 4-2
   - 🏳 Unknown-vmess | 4-3
@@ -309,6 +329,7 @@ proxy-groups:
   - 🚀 节点选择
   - 🎯 全球直连
   - 🇺🇸 US-hysteria | 0-1
+  - 🇺🇸 US-hysteria | 1-1
   - 🏳 Unknown-vmess | 4-1
   - 🇺🇸 US-vmess | 4-2
   - 🏳 Unknown-vmess | 4-3
@@ -325,6 +346,7 @@ proxy-groups:
   - 🚀 节点选择
   - 🎯 全球直连
   - 🇺🇸 US-hysteria | 0-1
+  - 🇺🇸 US-hysteria | 1-1
   - 🏳 Unknown-vmess | 4-1
   - 🇺🇸 US-vmess | 4-2
   - 🏳 Unknown-vmess | 4-3
@@ -350,6 +372,7 @@ proxy-groups:
   - 🚀 节点选择
   - 🎯 全球直连
   - 🇺🇸 US-hysteria | 0-1
+  - 🇺🇸 US-hysteria | 1-1
   - 🏳 Unknown-vmess | 4-1
   - 🇺🇸 US-vmess | 4-2
   - 🏳 Unknown-vmess | 4-3
