@@ -110,7 +110,7 @@ proxies:
     path: ef8c954e-014f-4b36-8273-9b5086afab34-vm
     headers:
       host: dual-nothing-prep-exit.trycloudflare.com
-- name: 🏳 Unknown-hysteria | 5-1
+- name: 🇺🇸 US-hysteria | 5-1
   type: hysteria
   server: hy1.dtku47.xyz
   port: 22334
@@ -134,13 +134,6 @@ proxies:
   skip-cert-verify: true
   alpn:
   - h3
-- name: 🇺🇸 US-Hysteria2 | 0-0
-  type: hysteria2
-  server: 104.168.10.176
-  port: 35205
-  password: dongtaiwang.com
-  sni: apple.com
-  skip-cert-verify: true
 - name: 🏳 Unknown-vless | 0-0
   type: vless
   server: 2001:bc8:32d7:302::13
@@ -188,9 +181,8 @@ proxy-groups:
   - 🇺🇸 US-vmess | 4-2
   - 🏳 Unknown-vmess | 4-3
   - 🏳 Unknown-vmess | 4-4
-  - 🏳 Unknown-hysteria | 5-1
+  - 🇺🇸 US-hysteria | 5-1
   - 🇳🇱 NL-Hysteria | 0-0
-  - 🇺🇸 US-Hysteria2 | 0-0
   - 🏳 Unknown-vless | 0-0
   - 🏳 Unknown-vmess | 2-0
 - name: ♻️ 自动选择
@@ -205,9 +197,8 @@ proxy-groups:
   - 🇺🇸 US-vmess | 4-2
   - 🏳 Unknown-vmess | 4-3
   - 🏳 Unknown-vmess | 4-4
-  - 🏳 Unknown-hysteria | 5-1
+  - 🇺🇸 US-hysteria | 5-1
   - 🇳🇱 NL-Hysteria | 0-0
-  - 🇺🇸 US-Hysteria2 | 0-0
   - 🏳 Unknown-vless | 0-0
   - 🏳 Unknown-vmess | 2-0
 - name: ⚖ 负载均衡
@@ -222,9 +213,8 @@ proxy-groups:
   - 🇺🇸 US-vmess | 4-2
   - 🏳 Unknown-vmess | 4-3
   - 🏳 Unknown-vmess | 4-4
-  - 🏳 Unknown-hysteria | 5-1
+  - 🇺🇸 US-hysteria | 5-1
   - 🇳🇱 NL-Hysteria | 0-0
-  - 🇺🇸 US-Hysteria2 | 0-0
   - 🏳 Unknown-vless | 0-0
   - 🏳 Unknown-vmess | 2-0
 - name: ☁ WARP前置节点
@@ -239,9 +229,8 @@ proxy-groups:
   - 🇺🇸 US-vmess | 4-2
   - 🏳 Unknown-vmess | 4-3
   - 🏳 Unknown-vmess | 4-4
-  - 🏳 Unknown-hysteria | 5-1
+  - 🇺🇸 US-hysteria | 5-1
   - 🇳🇱 NL-Hysteria | 0-0
-  - 🇺🇸 US-Hysteria2 | 0-0
   - 🏳 Unknown-vless | 0-0
   - 🏳 Unknown-vmess | 2-0
 - name: 📺 巴哈姆特
@@ -256,9 +245,8 @@ proxy-groups:
   - 🇺🇸 US-vmess | 4-2
   - 🏳 Unknown-vmess | 4-3
   - 🏳 Unknown-vmess | 4-4
-  - 🏳 Unknown-hysteria | 5-1
+  - 🇺🇸 US-hysteria | 5-1
   - 🇳🇱 NL-Hysteria | 0-0
-  - 🇺🇸 US-Hysteria2 | 0-0
   - 🏳 Unknown-vless | 0-0
   - 🏳 Unknown-vmess | 2-0
 - name: 📺 哔哩哔哩
@@ -273,9 +261,8 @@ proxy-groups:
   - 🇺🇸 US-vmess | 4-2
   - 🏳 Unknown-vmess | 4-3
   - 🏳 Unknown-vmess | 4-4
-  - 🏳 Unknown-hysteria | 5-1
+  - 🇺🇸 US-hysteria | 5-1
   - 🇳🇱 NL-Hysteria | 0-0
-  - 🇺🇸 US-Hysteria2 | 0-0
   - 🏳 Unknown-vless | 0-0
   - 🏳 Unknown-vmess | 2-0
 - name: 🌏 国内媒体
@@ -290,9 +277,8 @@ proxy-groups:
   - 🇺🇸 US-vmess | 4-2
   - 🏳 Unknown-vmess | 4-3
   - 🏳 Unknown-vmess | 4-4
-  - 🏳 Unknown-hysteria | 5-1
+  - 🇺🇸 US-hysteria | 5-1
   - 🇳🇱 NL-Hysteria | 0-0
-  - 🇺🇸 US-Hysteria2 | 0-0
   - 🏳 Unknown-vless | 0-0
   - 🏳 Unknown-vmess | 2-0
 - name: 🌍 国外媒体
@@ -307,9 +293,8 @@ proxy-groups:
   - 🇺🇸 US-vmess | 4-2
   - 🏳 Unknown-vmess | 4-3
   - 🏳 Unknown-vmess | 4-4
-  - 🏳 Unknown-hysteria | 5-1
+  - 🇺🇸 US-hysteria | 5-1
   - 🇳🇱 NL-Hysteria | 0-0
-  - 🇺🇸 US-Hysteria2 | 0-0
   - 🏳 Unknown-vless | 0-0
   - 🏳 Unknown-vmess | 2-0
 - name: 📲 电报信息
@@ -324,9 +309,8 @@ proxy-groups:
   - 🇺🇸 US-vmess | 4-2
   - 🏳 Unknown-vmess | 4-3
   - 🏳 Unknown-vmess | 4-4
-  - 🏳 Unknown-hysteria | 5-1
+  - 🇺🇸 US-hysteria | 5-1
   - 🇳🇱 NL-Hysteria | 0-0
-  - 🇺🇸 US-Hysteria2 | 0-0
   - 🏳 Unknown-vless | 0-0
   - 🏳 Unknown-vmess | 2-0
 - name: Ⓜ️ 微软云盘
@@ -341,9 +325,8 @@ proxy-groups:
   - 🇺🇸 US-vmess | 4-2
   - 🏳 Unknown-vmess | 4-3
   - 🏳 Unknown-vmess | 4-4
-  - 🏳 Unknown-hysteria | 5-1
+  - 🇺🇸 US-hysteria | 5-1
   - 🇳🇱 NL-Hysteria | 0-0
-  - 🇺🇸 US-Hysteria2 | 0-0
   - 🏳 Unknown-vless | 0-0
   - 🏳 Unknown-vmess | 2-0
 - name: Ⓜ️ 微软服务
@@ -358,9 +341,8 @@ proxy-groups:
   - 🇺🇸 US-vmess | 4-2
   - 🏳 Unknown-vmess | 4-3
   - 🏳 Unknown-vmess | 4-4
-  - 🏳 Unknown-hysteria | 5-1
+  - 🇺🇸 US-hysteria | 5-1
   - 🇳🇱 NL-Hysteria | 0-0
-  - 🇺🇸 US-Hysteria2 | 0-0
   - 🏳 Unknown-vless | 0-0
   - 🏳 Unknown-vmess | 2-0
 - name: 🍎 苹果服务
@@ -375,9 +357,8 @@ proxy-groups:
   - 🇺🇸 US-vmess | 4-2
   - 🏳 Unknown-vmess | 4-3
   - 🏳 Unknown-vmess | 4-4
-  - 🏳 Unknown-hysteria | 5-1
+  - 🇺🇸 US-hysteria | 5-1
   - 🇳🇱 NL-Hysteria | 0-0
-  - 🇺🇸 US-Hysteria2 | 0-0
   - 🏳 Unknown-vless | 0-0
   - 🏳 Unknown-vmess | 2-0
 - name: 📢 谷歌FCM
@@ -392,9 +373,8 @@ proxy-groups:
   - 🇺🇸 US-vmess | 4-2
   - 🏳 Unknown-vmess | 4-3
   - 🏳 Unknown-vmess | 4-4
-  - 🏳 Unknown-hysteria | 5-1
+  - 🇺🇸 US-hysteria | 5-1
   - 🇳🇱 NL-Hysteria | 0-0
-  - 🇺🇸 US-Hysteria2 | 0-0
   - 🏳 Unknown-vless | 0-0
   - 🏳 Unknown-vmess | 2-0
 - name: 🤖 OpenAI
@@ -409,9 +389,8 @@ proxy-groups:
   - 🇺🇸 US-vmess | 4-2
   - 🏳 Unknown-vmess | 4-3
   - 🏳 Unknown-vmess | 4-4
-  - 🏳 Unknown-hysteria | 5-1
+  - 🇺🇸 US-hysteria | 5-1
   - 🇳🇱 NL-Hysteria | 0-0
-  - 🇺🇸 US-Hysteria2 | 0-0
   - 🏳 Unknown-vless | 0-0
   - 🏳 Unknown-vmess | 2-0
 - name: 🎯 全球直连
@@ -435,9 +414,8 @@ proxy-groups:
   - 🇺🇸 US-vmess | 4-2
   - 🏳 Unknown-vmess | 4-3
   - 🏳 Unknown-vmess | 4-4
-  - 🏳 Unknown-hysteria | 5-1
+  - 🇺🇸 US-hysteria | 5-1
   - 🇳🇱 NL-Hysteria | 0-0
-  - 🇺🇸 US-Hysteria2 | 0-0
   - 🏳 Unknown-vless | 0-0
   - 🏳 Unknown-vmess | 2-0
 rules:
