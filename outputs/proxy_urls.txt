@@ -1,0 +1,2 @@
+hysteria://hy2.dtku47.xyz:15566/?protocol=udp&insecure=0&peer=&auth=jQrGpwSqp34P&upmbps=50 Mbps&downmbps=100 Mbps&alpn=h3&obfs=#🏳 Unknown-hysteria | 0-1
+hysteria://109.104.153.91:37519/?protocol=udp&insecure=1&peer=apple.com&auth=dongtaiwang.com&upmbps=80&downmbps=100&alpn=h3&obfs=#🇳🇱 NL-Hysteria | 1-0
