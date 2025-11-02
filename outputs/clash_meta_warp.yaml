@@ -30,6 +30,20 @@ proxies:
   - 1.1.1.1
   - 8.8.8.8
   dialer-proxy: ☁ WARP前置节点
+- name: 🇳🇱 NL-Hysteria | 3-0
+  type: hysteria
+  server: 109.104.153.91
+  port: 37519
+  ports: 10000-20000
+  auth-str: dongtaiwang.com
+  up: 80
+  down: 100
+  fast-open: true
+  protocol: udp
+  sni: apple.com
+  skip-cert-verify: true
+  alpn:
+  - h3
 proxy-groups:
 - name: 🚀 节点选择
   type: select
@@ -37,84 +51,98 @@ proxy-groups:
   - ♻️ 自动选择
   - 🎯 全球直连
   - ☁ WARP
+  - 🇳🇱 NL-Hysteria | 3-0
 - name: ♻️ 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
-  proxies: []
+  proxies:
+  - 🇳🇱 NL-Hysteria | 3-0
 - name: ⚖ 负载均衡
   type: load-balance
   url: http://www.gstatic.com/generate_204
   interval: 300
   strategy: consistent-hashing
-  proxies: []
+  proxies:
+  - 🇳🇱 NL-Hysteria | 3-0
 - name: ☁ WARP前置节点
   type: select
   proxies:
   - ⚖ 负载均衡
   - ♻️ 自动选择
   - 🎯 全球直连
+  - 🇳🇱 NL-Hysteria | 3-0
 - name: 📺 巴哈姆特
   type: select
   proxies:
   - 🚀 节点选择
   - 🎯 全球直连
   - ☁ WARP
+  - 🇳🇱 NL-Hysteria | 3-0
 - name: 📺 哔哩哔哩
   type: select
   proxies:
   - 🎯 全球直连
   - 🚀 节点选择
   - ☁ WARP
+  - 🇳🇱 NL-Hysteria | 3-0
 - name: 🌏 国内媒体
   type: select
   proxies:
   - 🎯 全球直连
   - 🚀 节点选择
   - ☁ WARP
+  - 🇳🇱 NL-Hysteria | 3-0
 - name: 🌍 国外媒体
   type: select
   proxies:
   - 🚀 节点选择
   - 🎯 全球直连
   - ☁ WARP
+  - 🇳🇱 NL-Hysteria | 3-0
 - name: 📲 电报信息
   type: select
   proxies:
   - 🚀 节点选择
   - 🎯 全球直连
   - ☁ WARP
+  - 🇳🇱 NL-Hysteria | 3-0
 - name: Ⓜ️ 微软云盘
   type: select
   proxies:
   - 🎯 全球直连
   - 🚀 节点选择
   - ☁ WARP
+  - 🇳🇱 NL-Hysteria | 3-0
 - name: Ⓜ️ 微软服务
   type: select
   proxies:
   - 🎯 全球直连
   - 🚀 节点选择
   - ☁ WARP
+  - 🇳🇱 NL-Hysteria | 3-0
 - name: 🍎 苹果服务
   type: select
   proxies:
   - 🚀 节点选择
   - 🎯 全球直连
   - ☁ WARP
+  - 🇳🇱 NL-Hysteria | 3-0
 - name: 📢 谷歌FCM
   type: select
   proxies:
   - 🚀 节点选择
   - 🎯 全球直连
   - ☁ WARP
+  - 🇳🇱 NL-Hysteria | 3-0
 - name: 🤖 OpenAI
   type: select
   proxies:
   - 🚀 节点选择
   - 🎯 全球直连
   - ☁ WARP
+  - 🇳🇱 NL-Hysteria | 3-0
 - name: 🎯 全球直连
   type: select
   proxies:
@@ -130,6 +158,7 @@ proxy-groups:
   - 🚀 节点选择
   - 🎯 全球直连
   - ☁ WARP
+  - 🇳🇱 NL-Hysteria | 3-0
 rules:
 - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
 - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
