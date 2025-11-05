@@ -1,0 +1,2 @@
+hysteria://hy2.dtku47.xyz:15566/?protocol=udp&insecure=0&peer=&auth=jQrGpwSqp34P&upmbps=50 Mbps&downmbps=100 Mbps&alpn=h3&obfs=#🏳 Unknown-hysteria | 0-1
+hysteria://clash1.dtku47.xyz:11223/?protocol=udp&insecure=0&peer=&auth=O5tQQiW2xKf5&upmbps=50 Mbps&downmbps=100 Mbps&alpn=h3&obfs=#🏳 Unknown-hysteria | 1-1
