@@ -30,77 +30,7 @@ proxies:
   - 1.1.1.1
   - 8.8.8.8
   dialer-proxy: ☁ WARP前置节点
-- name: 🏳 Unknown-hysteria | 0-1
-  type: hysteria
-  server: hy2.dtku47.xyz
-  port: 15566
-  auth-str: jQrGpwSqp34P
-  alpn:
-  - h3
-  protocol: udp
-  up: 50 Mbps
-  down: 100 Mbps
-- name: 🏳 Unknown-vmess | 4-1
-  type: vmess
-  server: 104.26.9.22
-  port: 8080
-  cipher: auto
-  uuid: ef8c954e-014f-4b36-8273-9b5086afab34
-  alterId: 0
-  tls: false
-  skip-cert-verify: true
-  servername: dual-nothing-prep-exit.trycloudflare.com
-  network: ws
-  ws-opts:
-    path: ef8c954e-014f-4b36-8273-9b5086afab34-vm
-    headers:
-      host: dual-nothing-prep-exit.trycloudflare.com
-- name: 🇺🇸 US-vmess | 4-2
-  type: vmess
-  server: 172.64.97.235
-  port: 8080
-  cipher: auto
-  uuid: ef8c954e-014f-4b36-8273-9b5086afab34
-  alterId: 0
-  tls: false
-  skip-cert-verify: true
-  servername: dual-nothing-prep-exit.trycloudflare.com
-  network: ws
-  ws-opts:
-    path: ef8c954e-014f-4b36-8273-9b5086afab34-vm
-    headers:
-      host: dual-nothing-prep-exit.trycloudflare.com
-- name: 🏳 Unknown-vmess | 4-3
-  type: vmess
-  server: 104.19.38.28
-  port: 8080
-  cipher: auto
-  uuid: ef8c954e-014f-4b36-8273-9b5086afab34
-  alterId: 0
-  tls: false
-  skip-cert-verify: true
-  servername: dual-nothing-prep-exit.trycloudflare.com
-  network: ws
-  ws-opts:
-    path: ef8c954e-014f-4b36-8273-9b5086afab34-vm
-    headers:
-      host: dual-nothing-prep-exit.trycloudflare.com
-- name: 🏳 Unknown-vmess | 4-4
-  type: vmess
-  server: 104.19.38.48
-  port: 8080
-  cipher: auto
-  uuid: ef8c954e-014f-4b36-8273-9b5086afab34
-  alterId: 0
-  tls: false
-  skip-cert-verify: true
-  servername: dual-nothing-prep-exit.trycloudflare.com
-  network: ws
-  ws-opts:
-    path: ef8c954e-014f-4b36-8273-9b5086afab34-vm
-    headers:
-      host: dual-nothing-prep-exit.trycloudflare.com
-- name: 🇱🇺 LU-Hysteria | 3-0
+- name: 🇱🇺 LU-Hysteria | 0-0
   type: hysteria
   server: 109.104.154.97
   port: 48429
@@ -136,12 +66,7 @@ proxy-groups:
   - ♻️ 自动选择
   - 🎯 全球直连
   - ☁ WARP
-  - 🏳 Unknown-hysteria | 0-1
-  - 🏳 Unknown-vmess | 4-1
-  - 🇺🇸 US-vmess | 4-2
-  - 🏳 Unknown-vmess | 4-3
-  - 🏳 Unknown-vmess | 4-4
-  - 🇱🇺 LU-Hysteria | 3-0
+  - 🇱🇺 LU-Hysteria | 0-0
   - 🏳 Unknown-vless | 0-0
 - name: ♻️ 自动选择
   type: url-test
@@ -149,12 +74,7 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - 🏳 Unknown-hysteria | 0-1
-  - 🏳 Unknown-vmess | 4-1
-  - 🇺🇸 US-vmess | 4-2
-  - 🏳 Unknown-vmess | 4-3
-  - 🏳 Unknown-vmess | 4-4
-  - 🇱🇺 LU-Hysteria | 3-0
+  - 🇱🇺 LU-Hysteria | 0-0
   - 🏳 Unknown-vless | 0-0
 - name: ⚖ 负载均衡
   type: load-balance
@@ -162,12 +82,7 @@ proxy-groups:
   interval: 300
   strategy: consistent-hashing
   proxies:
-  - 🏳 Unknown-hysteria | 0-1
-  - 🏳 Unknown-vmess | 4-1
-  - 🇺🇸 US-vmess | 4-2
-  - 🏳 Unknown-vmess | 4-3
-  - 🏳 Unknown-vmess | 4-4
-  - 🇱🇺 LU-Hysteria | 3-0
+  - 🇱🇺 LU-Hysteria | 0-0
   - 🏳 Unknown-vless | 0-0
 - name: ☁ WARP前置节点
   type: select
@@ -175,12 +90,7 @@ proxy-groups:
   - ⚖ 负载均衡
   - ♻️ 自动选择
   - 🎯 全球直连
-  - 🏳 Unknown-hysteria | 0-1
-  - 🏳 Unknown-vmess | 4-1
-  - 🇺🇸 US-vmess | 4-2
-  - 🏳 Unknown-vmess | 4-3
-  - 🏳 Unknown-vmess | 4-4
-  - 🇱🇺 LU-Hysteria | 3-0
+  - 🇱🇺 LU-Hysteria | 0-0
   - 🏳 Unknown-vless | 0-0
 - name: 📺 巴哈姆特
   type: select
@@ -188,12 +98,7 @@ proxy-groups:
   - 🚀 节点选择
   - 🎯 全球直连
   - ☁ WARP
-  - 🏳 Unknown-hysteria | 0-1
-  - 🏳 Unknown-vmess | 4-1
-  - 🇺🇸 US-vmess | 4-2
-  - 🏳 Unknown-vmess | 4-3
-  - 🏳 Unknown-vmess | 4-4
-  - 🇱🇺 LU-Hysteria | 3-0
+  - 🇱🇺 LU-Hysteria | 0-0
   - 🏳 Unknown-vless | 0-0
 - name: 📺 哔哩哔哩
   type: select
@@ -201,12 +106,7 @@ proxy-groups:
   - 🎯 全球直连
   - 🚀 节点选择
   - ☁ WARP
-  - 🏳 Unknown-hysteria | 0-1
-  - 🏳 Unknown-vmess | 4-1
-  - 🇺🇸 US-vmess | 4-2
-  - 🏳 Unknown-vmess | 4-3
-  - 🏳 Unknown-vmess | 4-4
-  - 🇱🇺 LU-Hysteria | 3-0
+  - 🇱🇺 LU-Hysteria | 0-0
   - 🏳 Unknown-vless | 0-0
 - name: 🌏 国内媒体
   type: select
@@ -214,12 +114,7 @@ proxy-groups:
   - 🎯 全球直连
   - 🚀 节点选择
   - ☁ WARP
-  - 🏳 Unknown-hysteria | 0-1
-  - 🏳 Unknown-vmess | 4-1
-  - 🇺🇸 US-vmess | 4-2
-  - 🏳 Unknown-vmess | 4-3
-  - 🏳 Unknown-vmess | 4-4
-  - 🇱🇺 LU-Hysteria | 3-0
+  - 🇱🇺 LU-Hysteria | 0-0
   - 🏳 Unknown-vless | 0-0
 - name: 🌍 国外媒体
   type: select
@@ -227,12 +122,7 @@ proxy-groups:
   - 🚀 节点选择
   - 🎯 全球直连
   - ☁ WARP
-  - 🏳 Unknown-hysteria | 0-1
-  - 🏳 Unknown-vmess | 4-1
-  - 🇺🇸 US-vmess | 4-2
-  - 🏳 Unknown-vmess | 4-3
-  - 🏳 Unknown-vmess | 4-4
-  - 🇱🇺 LU-Hysteria | 3-0
+  - 🇱🇺 LU-Hysteria | 0-0
   - 🏳 Unknown-vless | 0-0
 - name: 📲 电报信息
   type: select
@@ -240,12 +130,7 @@ proxy-groups:
   - 🚀 节点选择
   - 🎯 全球直连
   - ☁ WARP
-  - 🏳 Unknown-hysteria | 0-1
-  - 🏳 Unknown-vmess | 4-1
-  - 🇺🇸 US-vmess | 4-2
-  - 🏳 Unknown-vmess | 4-3
-  - 🏳 Unknown-vmess | 4-4
-  - 🇱🇺 LU-Hysteria | 3-0
+  - 🇱🇺 LU-Hysteria | 0-0
   - 🏳 Unknown-vless | 0-0
 - name: Ⓜ️ 微软云盘
   type: select
@@ -253,12 +138,7 @@ proxy-groups:
   - 🎯 全球直连
   - 🚀 节点选择
   - ☁ WARP
-  - 🏳 Unknown-hysteria | 0-1
-  - 🏳 Unknown-vmess | 4-1
-  - 🇺🇸 US-vmess | 4-2
-  - 🏳 Unknown-vmess | 4-3
-  - 🏳 Unknown-vmess | 4-4
-  - 🇱🇺 LU-Hysteria | 3-0
+  - 🇱🇺 LU-Hysteria | 0-0
   - 🏳 Unknown-vless | 0-0
 - name: Ⓜ️ 微软服务
   type: select
@@ -266,12 +146,7 @@ proxy-groups:
   - 🎯 全球直连
   - 🚀 节点选择
   - ☁ WARP
-  - 🏳 Unknown-hysteria | 0-1
-  - 🏳 Unknown-vmess | 4-1
-  - 🇺🇸 US-vmess | 4-2
-  - 🏳 Unknown-vmess | 4-3
-  - 🏳 Unknown-vmess | 4-4
-  - 🇱🇺 LU-Hysteria | 3-0
+  - 🇱🇺 LU-Hysteria | 0-0
   - 🏳 Unknown-vless | 0-0
 - name: 🍎 苹果服务
   type: select
@@ -279,12 +154,7 @@ proxy-groups:
   - 🚀 节点选择
   - 🎯 全球直连
   - ☁ WARP
-  - 🏳 Unknown-hysteria | 0-1
-  - 🏳 Unknown-vmess | 4-1
-  - 🇺🇸 US-vmess | 4-2
-  - 🏳 Unknown-vmess | 4-3
-  - 🏳 Unknown-vmess | 4-4
-  - 🇱🇺 LU-Hysteria | 3-0
+  - 🇱🇺 LU-Hysteria | 0-0
   - 🏳 Unknown-vless | 0-0
 - name: 📢 谷歌FCM
   type: select
@@ -292,12 +162,7 @@ proxy-groups:
   - 🚀 节点选择
   - 🎯 全球直连
   - ☁ WARP
-  - 🏳 Unknown-hysteria | 0-1
-  - 🏳 Unknown-vmess | 4-1
-  - 🇺🇸 US-vmess | 4-2
-  - 🏳 Unknown-vmess | 4-3
-  - 🏳 Unknown-vmess | 4-4
-  - 🇱🇺 LU-Hysteria | 3-0
+  - 🇱🇺 LU-Hysteria | 0-0
   - 🏳 Unknown-vless | 0-0
 - name: 🤖 OpenAI
   type: select
@@ -305,12 +170,7 @@ proxy-groups:
   - 🚀 节点选择
   - 🎯 全球直连
   - ☁ WARP
-  - 🏳 Unknown-hysteria | 0-1
-  - 🏳 Unknown-vmess | 4-1
-  - 🇺🇸 US-vmess | 4-2
-  - 🏳 Unknown-vmess | 4-3
-  - 🏳 Unknown-vmess | 4-4
-  - 🇱🇺 LU-Hysteria | 3-0
+  - 🇱🇺 LU-Hysteria | 0-0
   - 🏳 Unknown-vless | 0-0
 - name: 🎯 全球直连
   type: select
@@ -327,12 +187,7 @@ proxy-groups:
   - 🚀 节点选择
   - 🎯 全球直连
   - ☁ WARP
-  - 🏳 Unknown-hysteria | 0-1
-  - 🏳 Unknown-vmess | 4-1
-  - 🇺🇸 US-vmess | 4-2
-  - 🏳 Unknown-vmess | 4-3
-  - 🏳 Unknown-vmess | 4-4
-  - 🇱🇺 LU-Hysteria | 3-0
+  - 🇱🇺 LU-Hysteria | 0-0
   - 🏳 Unknown-vless | 0-0
 rules:
 - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
