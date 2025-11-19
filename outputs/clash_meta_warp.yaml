@@ -30,16 +30,30 @@ proxies:
   - 1.1.1.1
   - 8.8.8.8
   dialer-proxy: ☁ WARP前置节点
-- name: 🏳 Unknown-hysteria | 5-1
+- name: 🏳 Unknown-hysteria | 0-1
   type: hysteria
-  server: hy1.dtku47.xyz
-  port: 22334
-  auth-str: lASdKzWK0VxL
+  server: hy2.dtku47.xyz
+  port: 15566
+  auth-str: jQrGpwSqp34P
   alpn:
   - h3
   protocol: udp
   up: 50 Mbps
   down: 100 Mbps
+- name: 🏳 Unknown-Hysteria | 0-0
+  type: hysteria
+  server: '[2604'
+  port: 6600
+  ports: 6600
+  auth-str: dongtaiwang.com
+  up: 80
+  down: 100
+  fast-open: true
+  protocol: udp
+  sni: apple.com
+  skip-cert-verify: true
+  alpn:
+  - h3
 - name: 🏳 Unknown-vless | 0-0
   type: vless
   server: 2001:bc8:32d7:302::13
@@ -62,7 +76,8 @@ proxy-groups:
   - ♻️ 自动选择
   - 🎯 全球直连
   - ☁ WARP
-  - 🏳 Unknown-hysteria | 5-1
+  - 🏳 Unknown-hysteria | 0-1
+  - 🏳 Unknown-Hysteria | 0-0
   - 🏳 Unknown-vless | 0-0
 - name: ♻️ 自动选择
   type: url-test
@@ -70,7 +85,8 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - 🏳 Unknown-hysteria | 5-1
+  - 🏳 Unknown-hysteria | 0-1
+  - 🏳 Unknown-Hysteria | 0-0
   - 🏳 Unknown-vless | 0-0
 - name: ⚖ 负载均衡
   type: load-balance
@@ -78,7 +94,8 @@ proxy-groups:
   interval: 300
   strategy: consistent-hashing
   proxies:
-  - 🏳 Unknown-hysteria | 5-1
+  - 🏳 Unknown-hysteria | 0-1
+  - 🏳 Unknown-Hysteria | 0-0
   - 🏳 Unknown-vless | 0-0
 - name: ☁ WARP前置节点
   type: select
@@ -86,7 +103,8 @@ proxy-groups:
   - ⚖ 负载均衡
   - ♻️ 自动选择
   - 🎯 全球直连
-  - 🏳 Unknown-hysteria | 5-1
+  - 🏳 Unknown-hysteria | 0-1
+  - 🏳 Unknown-Hysteria | 0-0
   - 🏳 Unknown-vless | 0-0
 - name: 📺 巴哈姆特
   type: select
@@ -94,7 +112,8 @@ proxy-groups:
   - 🚀 节点选择
   - 🎯 全球直连
   - ☁ WARP
-  - 🏳 Unknown-hysteria | 5-1
+  - 🏳 Unknown-hysteria | 0-1
+  - 🏳 Unknown-Hysteria | 0-0
   - 🏳 Unknown-vless | 0-0
 - name: 📺 哔哩哔哩
   type: select
@@ -102,7 +121,8 @@ proxy-groups:
   - 🎯 全球直连
   - 🚀 节点选择
   - ☁ WARP
-  - 🏳 Unknown-hysteria | 5-1
+  - 🏳 Unknown-hysteria | 0-1
+  - 🏳 Unknown-Hysteria | 0-0
   - 🏳 Unknown-vless | 0-0
 - name: 🌏 国内媒体
   type: select
@@ -110,7 +130,8 @@ proxy-groups:
   - 🎯 全球直连
   - 🚀 节点选择
   - ☁ WARP
-  - 🏳 Unknown-hysteria | 5-1
+  - 🏳 Unknown-hysteria | 0-1
+  - 🏳 Unknown-Hysteria | 0-0
   - 🏳 Unknown-vless | 0-0
 - name: 🌍 国外媒体
   type: select
@@ -118,7 +139,8 @@ proxy-groups:
   - 🚀 节点选择
   - 🎯 全球直连
   - ☁ WARP
-  - 🏳 Unknown-hysteria | 5-1
+  - 🏳 Unknown-hysteria | 0-1
+  - 🏳 Unknown-Hysteria | 0-0
   - 🏳 Unknown-vless | 0-0
 - name: 📲 电报信息
   type: select
@@ -126,7 +148,8 @@ proxy-groups:
   - 🚀 节点选择
   - 🎯 全球直连
   - ☁ WARP
-  - 🏳 Unknown-hysteria | 5-1
+  - 🏳 Unknown-hysteria | 0-1
+  - 🏳 Unknown-Hysteria | 0-0
   - 🏳 Unknown-vless | 0-0
 - name: Ⓜ️ 微软云盘
   type: select
@@ -134,7 +157,8 @@ proxy-groups:
   - 🎯 全球直连
   - 🚀 节点选择
   - ☁ WARP
-  - 🏳 Unknown-hysteria | 5-1
+  - 🏳 Unknown-hysteria | 0-1
+  - 🏳 Unknown-Hysteria | 0-0
   - 🏳 Unknown-vless | 0-0
 - name: Ⓜ️ 微软服务
   type: select
@@ -142,7 +166,8 @@ proxy-groups:
   - 🎯 全球直连
   - 🚀 节点选择
   - ☁ WARP
-  - 🏳 Unknown-hysteria | 5-1
+  - 🏳 Unknown-hysteria | 0-1
+  - 🏳 Unknown-Hysteria | 0-0
   - 🏳 Unknown-vless | 0-0
 - name: 🍎 苹果服务
   type: select
@@ -150,7 +175,8 @@ proxy-groups:
   - 🚀 节点选择
   - 🎯 全球直连
   - ☁ WARP
-  - 🏳 Unknown-hysteria | 5-1
+  - 🏳 Unknown-hysteria | 0-1
+  - 🏳 Unknown-Hysteria | 0-0
   - 🏳 Unknown-vless | 0-0
 - name: 📢 谷歌FCM
   type: select
@@ -158,7 +184,8 @@ proxy-groups:
   - 🚀 节点选择
   - 🎯 全球直连
   - ☁ WARP
-  - 🏳 Unknown-hysteria | 5-1
+  - 🏳 Unknown-hysteria | 0-1
+  - 🏳 Unknown-Hysteria | 0-0
   - 🏳 Unknown-vless | 0-0
 - name: 🤖 OpenAI
   type: select
@@ -166,7 +193,8 @@ proxy-groups:
   - 🚀 节点选择
   - 🎯 全球直连
   - ☁ WARP
-  - 🏳 Unknown-hysteria | 5-1
+  - 🏳 Unknown-hysteria | 0-1
+  - 🏳 Unknown-Hysteria | 0-0
   - 🏳 Unknown-vless | 0-0
 - name: 🎯 全球直连
   type: select
@@ -183,7 +211,8 @@ proxy-groups:
   - 🚀 节点选择
   - 🎯 全球直连
   - ☁ WARP
-  - 🏳 Unknown-hysteria | 5-1
+  - 🏳 Unknown-hysteria | 0-1
+  - 🏳 Unknown-Hysteria | 0-0
   - 🏳 Unknown-vless | 0-0
 rules:
 - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
