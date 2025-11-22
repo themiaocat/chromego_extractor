@@ -1,3 +1,0 @@
-hysteria://hy2.dtku47.xyz:15566/?protocol=udp&insecure=0&peer=&auth=jQrGpwSqp34P&upmbps=50 Mbps&downmbps=100 Mbps&alpn=h3&obfs=#🏳 Unknown-hysteria | 0-1
-hysteria://hy1.dtku47.xyz:22334/?protocol=udp&insecure=0&peer=&auth=lASdKzWK0VxL&upmbps=50 Mbps&downmbps=100 Mbps&alpn=h3&obfs=#🏳 Unknown-hysteria | 5-1
-hysteria://[2604:6600/?protocol=udp&insecure=1&peer=apple.com&auth=dongtaiwang.com&upmbps=80&downmbps=100&alpn=h3&obfs=#🏳 Unknown-Hysteria | 3-0
