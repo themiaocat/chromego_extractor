@@ -55,7 +55,7 @@ proxies:
   skip-cert-verify: true
   alpn:
   - h3
-- name: 🏳 Unknown-vless | 1-0
+- name: 🏳 Unknown-vless | 0-0
   type: vless
   server: 2001:bc8:32d7:302::13
   port: 34324
@@ -99,7 +99,7 @@ proxy-groups:
   - 🏳 Unknown-hysteria | 2-1
   - 🏳 Unknown-hysteria | 5-1
   - 🏳 Unknown-Hysteria | 0-0
-  - 🏳 Unknown-vless | 1-0
+  - 🏳 Unknown-vless | 0-0
   - 🏳 Unknown-vmess | 2-0
 - name: ♻️ 自动选择
   type: url-test
@@ -111,7 +111,7 @@ proxy-groups:
   - 🏳 Unknown-hysteria | 2-1
   - 🏳 Unknown-hysteria | 5-1
   - 🏳 Unknown-Hysteria | 0-0
-  - 🏳 Unknown-vless | 1-0
+  - 🏳 Unknown-vless | 0-0
   - 🏳 Unknown-vmess | 2-0
 - name: 📺 巴哈姆特
   type: select
@@ -122,7 +122,7 @@ proxy-groups:
   - 🏳 Unknown-hysteria | 2-1
   - 🏳 Unknown-hysteria | 5-1
   - 🏳 Unknown-Hysteria | 0-0
-  - 🏳 Unknown-vless | 1-0
+  - 🏳 Unknown-vless | 0-0
   - 🏳 Unknown-vmess | 2-0
 - name: 📺 哔哩哔哩
   type: select
@@ -133,7 +133,7 @@ proxy-groups:
   - 🏳 Unknown-hysteria | 2-1
   - 🏳 Unknown-hysteria | 5-1
   - 🏳 Unknown-Hysteria | 0-0
-  - 🏳 Unknown-vless | 1-0
+  - 🏳 Unknown-vless | 0-0
   - 🏳 Unknown-vmess | 2-0
 - name: 🌏 国内媒体
   type: select
@@ -144,7 +144,7 @@ proxy-groups:
   - 🏳 Unknown-hysteria | 2-1
   - 🏳 Unknown-hysteria | 5-1
   - 🏳 Unknown-Hysteria | 0-0
-  - 🏳 Unknown-vless | 1-0
+  - 🏳 Unknown-vless | 0-0
   - 🏳 Unknown-vmess | 2-0
 - name: 🌍 国外媒体
   type: select
@@ -155,7 +155,7 @@ proxy-groups:
   - 🏳 Unknown-hysteria | 2-1
   - 🏳 Unknown-hysteria | 5-1
   - 🏳 Unknown-Hysteria | 0-0
-  - 🏳 Unknown-vless | 1-0
+  - 🏳 Unknown-vless | 0-0
   - 🏳 Unknown-vmess | 2-0
 - name: 📲 电报信息
   type: select
@@ -166,7 +166,7 @@ proxy-groups:
   - 🏳 Unknown-hysteria | 2-1
   - 🏳 Unknown-hysteria | 5-1
   - 🏳 Unknown-Hysteria | 0-0
-  - 🏳 Unknown-vless | 1-0
+  - 🏳 Unknown-vless | 0-0
   - 🏳 Unknown-vmess | 2-0
 - name: Ⓜ️ 微软云盘
   type: select
@@ -177,7 +177,7 @@ proxy-groups:
   - 🏳 Unknown-hysteria | 2-1
   - 🏳 Unknown-hysteria | 5-1
   - 🏳 Unknown-Hysteria | 0-0
-  - 🏳 Unknown-vless | 1-0
+  - 🏳 Unknown-vless | 0-0
   - 🏳 Unknown-vmess | 2-0
 - name: Ⓜ️ 微软服务
   type: select
@@ -188,7 +188,7 @@ proxy-groups:
   - 🏳 Unknown-hysteria | 2-1
   - 🏳 Unknown-hysteria | 5-1
   - 🏳 Unknown-Hysteria | 0-0
-  - 🏳 Unknown-vless | 1-0
+  - 🏳 Unknown-vless | 0-0
   - 🏳 Unknown-vmess | 2-0
 - name: 🍎 苹果服务
   type: select
@@ -199,7 +199,7 @@ proxy-groups:
   - 🏳 Unknown-hysteria | 2-1
   - 🏳 Unknown-hysteria | 5-1
   - 🏳 Unknown-Hysteria | 0-0
-  - 🏳 Unknown-vless | 1-0
+  - 🏳 Unknown-vless | 0-0
   - 🏳 Unknown-vmess | 2-0
 - name: 📢 谷歌FCM
   type: select
@@ -210,7 +210,7 @@ proxy-groups:
   - 🏳 Unknown-hysteria | 2-1
   - 🏳 Unknown-hysteria | 5-1
   - 🏳 Unknown-Hysteria | 0-0
-  - 🏳 Unknown-vless | 1-0
+  - 🏳 Unknown-vless | 0-0
   - 🏳 Unknown-vmess | 2-0
 - name: 🤖 OpenAI
   type: select
@@ -221,7 +221,7 @@ proxy-groups:
   - 🏳 Unknown-hysteria | 2-1
   - 🏳 Unknown-hysteria | 5-1
   - 🏳 Unknown-Hysteria | 0-0
-  - 🏳 Unknown-vless | 1-0
+  - 🏳 Unknown-vless | 0-0
   - 🏳 Unknown-vmess | 2-0
 - name: 🎯 全球直连
   type: select
@@ -241,7 +241,7 @@ proxy-groups:
   - 🏳 Unknown-hysteria | 2-1
   - 🏳 Unknown-hysteria | 5-1
   - 🏳 Unknown-Hysteria | 0-0
-  - 🏳 Unknown-vless | 1-0
+  - 🏳 Unknown-vless | 0-0
   - 🏳 Unknown-vmess | 2-0
 rules:
 - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
