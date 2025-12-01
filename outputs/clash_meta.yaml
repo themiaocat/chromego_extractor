@@ -11,7 +11,7 @@ profile:
   tracing: true
 global-client-fingerprint: chrome
 proxies:
-- name: 🏳 Unknown-vmess | 3-0
+- name: 🏳 Unknown-vmess | 2-0
   type: vmess
   server: 2001:bc8:32d7:302::10
   port: 44579
@@ -36,74 +36,74 @@ proxy-groups:
   proxies:
   - ♻️ 自动选择
   - 🎯 全球直连
-  - 🏳 Unknown-vmess | 3-0
+  - 🏳 Unknown-vmess | 2-0
 - name: ♻️ 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
   proxies:
-  - 🏳 Unknown-vmess | 3-0
+  - 🏳 Unknown-vmess | 2-0
 - name: 📺 巴哈姆特
   type: select
   proxies:
   - 🚀 节点选择
   - 🎯 全球直连
-  - 🏳 Unknown-vmess | 3-0
+  - 🏳 Unknown-vmess | 2-0
 - name: 📺 哔哩哔哩
   type: select
   proxies:
   - 🎯 全球直连
   - 🚀 节点选择
-  - 🏳 Unknown-vmess | 3-0
+  - 🏳 Unknown-vmess | 2-0
 - name: 🌏 国内媒体
   type: select
   proxies:
   - 🎯 全球直连
   - 🚀 节点选择
-  - 🏳 Unknown-vmess | 3-0
+  - 🏳 Unknown-vmess | 2-0
 - name: 🌍 国外媒体
   type: select
   proxies:
   - 🚀 节点选择
   - 🎯 全球直连
-  - 🏳 Unknown-vmess | 3-0
+  - 🏳 Unknown-vmess | 2-0
 - name: 📲 电报信息
   type: select
   proxies:
   - 🚀 节点选择
   - 🎯 全球直连
-  - 🏳 Unknown-vmess | 3-0
+  - 🏳 Unknown-vmess | 2-0
 - name: Ⓜ️ 微软云盘
   type: select
   proxies:
   - 🎯 全球直连
   - 🚀 节点选择
-  - 🏳 Unknown-vmess | 3-0
+  - 🏳 Unknown-vmess | 2-0
 - name: Ⓜ️ 微软服务
   type: select
   proxies:
   - 🎯 全球直连
   - 🚀 节点选择
-  - 🏳 Unknown-vmess | 3-0
+  - 🏳 Unknown-vmess | 2-0
 - name: 🍎 苹果服务
   type: select
   proxies:
   - 🚀 节点选择
   - 🎯 全球直连
-  - 🏳 Unknown-vmess | 3-0
+  - 🏳 Unknown-vmess | 2-0
 - name: 📢 谷歌FCM
   type: select
   proxies:
   - 🚀 节点选择
   - 🎯 全球直连
-  - 🏳 Unknown-vmess | 3-0
+  - 🏳 Unknown-vmess | 2-0
 - name: 🤖 OpenAI
   type: select
   proxies:
   - 🚀 节点选择
   - 🎯 全球直连
-  - 🏳 Unknown-vmess | 3-0
+  - 🏳 Unknown-vmess | 2-0
 - name: 🎯 全球直连
   type: select
   proxies:
@@ -118,7 +118,7 @@ proxy-groups:
   proxies:
   - 🚀 节点选择
   - 🎯 全球直连
-  - 🏳 Unknown-vmess | 3-0
+  - 🏳 Unknown-vmess | 2-0
 rules:
 - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
 - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
