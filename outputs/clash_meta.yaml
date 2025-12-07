@@ -11,20 +11,16 @@ profile:
   tracing: true
 global-client-fingerprint: chrome
 proxies:
-- name: 🏳 Unknown-Hysteria | 1-0
+- name: 🏳 Unknown-hysteria | 1-1
   type: hysteria
-  server: '[2604'
-  port: 6600
-  ports: 6600
-  auth-str: dongtaiwang.com
-  up: 80
-  down: 100
-  fast-open: true
-  protocol: udp
-  sni: apple.com
-  skip-cert-verify: true
+  server: clash1.dtku47.xyz
+  port: 11223
+  auth-str: O5tQQiW2xKf5
   alpn:
   - h3
+  protocol: udp
+  up: 50 Mbps
+  down: 100 Mbps
 - name: 🏳 Unknown-vless | 0-0
   type: vless
   server: 2001:bc8:32d7:302::13
@@ -65,7 +61,7 @@ proxy-groups:
   proxies:
   - ♻️ 自动选择
   - 🎯 全球直连
-  - 🏳 Unknown-Hysteria | 1-0
+  - 🏳 Unknown-hysteria | 1-1
   - 🏳 Unknown-vless | 0-0
   - 🏳 Unknown-vmess | 2-0
 - name: ♻️ 自动选择
@@ -74,7 +70,7 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - 🏳 Unknown-Hysteria | 1-0
+  - 🏳 Unknown-hysteria | 1-1
   - 🏳 Unknown-vless | 0-0
   - 🏳 Unknown-vmess | 2-0
 - name: 📺 巴哈姆特
@@ -82,7 +78,7 @@ proxy-groups:
   proxies:
   - 🚀 节点选择
   - 🎯 全球直连
-  - 🏳 Unknown-Hysteria | 1-0
+  - 🏳 Unknown-hysteria | 1-1
   - 🏳 Unknown-vless | 0-0
   - 🏳 Unknown-vmess | 2-0
 - name: 📺 哔哩哔哩
@@ -90,7 +86,7 @@ proxy-groups:
   proxies:
   - 🎯 全球直连
   - 🚀 节点选择
-  - 🏳 Unknown-Hysteria | 1-0
+  - 🏳 Unknown-hysteria | 1-1
   - 🏳 Unknown-vless | 0-0
   - 🏳 Unknown-vmess | 2-0
 - name: 🌏 国内媒体
@@ -98,7 +94,7 @@ proxy-groups:
   proxies:
   - 🎯 全球直连
   - 🚀 节点选择
-  - 🏳 Unknown-Hysteria | 1-0
+  - 🏳 Unknown-hysteria | 1-1
   - 🏳 Unknown-vless | 0-0
   - 🏳 Unknown-vmess | 2-0
 - name: 🌍 国外媒体
@@ -106,7 +102,7 @@ proxy-groups:
   proxies:
   - 🚀 节点选择
   - 🎯 全球直连
-  - 🏳 Unknown-Hysteria | 1-0
+  - 🏳 Unknown-hysteria | 1-1
   - 🏳 Unknown-vless | 0-0
   - 🏳 Unknown-vmess | 2-0
 - name: 📲 电报信息
@@ -114,7 +110,7 @@ proxy-groups:
   proxies:
   - 🚀 节点选择
   - 🎯 全球直连
-  - 🏳 Unknown-Hysteria | 1-0
+  - 🏳 Unknown-hysteria | 1-1
   - 🏳 Unknown-vless | 0-0
   - 🏳 Unknown-vmess | 2-0
 - name: Ⓜ️ 微软云盘
@@ -122,7 +118,7 @@ proxy-groups:
   proxies:
   - 🎯 全球直连
   - 🚀 节点选择
-  - 🏳 Unknown-Hysteria | 1-0
+  - 🏳 Unknown-hysteria | 1-1
   - 🏳 Unknown-vless | 0-0
   - 🏳 Unknown-vmess | 2-0
 - name: Ⓜ️ 微软服务
@@ -130,7 +126,7 @@ proxy-groups:
   proxies:
   - 🎯 全球直连
   - 🚀 节点选择
-  - 🏳 Unknown-Hysteria | 1-0
+  - 🏳 Unknown-hysteria | 1-1
   - 🏳 Unknown-vless | 0-0
   - 🏳 Unknown-vmess | 2-0
 - name: 🍎 苹果服务
@@ -138,7 +134,7 @@ proxy-groups:
   proxies:
   - 🚀 节点选择
   - 🎯 全球直连
-  - 🏳 Unknown-Hysteria | 1-0
+  - 🏳 Unknown-hysteria | 1-1
   - 🏳 Unknown-vless | 0-0
   - 🏳 Unknown-vmess | 2-0
 - name: 📢 谷歌FCM
@@ -146,7 +142,7 @@ proxy-groups:
   proxies:
   - 🚀 节点选择
   - 🎯 全球直连
-  - 🏳 Unknown-Hysteria | 1-0
+  - 🏳 Unknown-hysteria | 1-1
   - 🏳 Unknown-vless | 0-0
   - 🏳 Unknown-vmess | 2-0
 - name: 🤖 OpenAI
@@ -154,7 +150,7 @@ proxy-groups:
   proxies:
   - 🚀 节点选择
   - 🎯 全球直连
-  - 🏳 Unknown-Hysteria | 1-0
+  - 🏳 Unknown-hysteria | 1-1
   - 🏳 Unknown-vless | 0-0
   - 🏳 Unknown-vmess | 2-0
 - name: 🎯 全球直连
@@ -171,7 +167,7 @@ proxy-groups:
   proxies:
   - 🚀 节点选择
   - 🎯 全球直连
-  - 🏳 Unknown-Hysteria | 1-0
+  - 🏳 Unknown-hysteria | 1-1
   - 🏳 Unknown-vless | 0-0
   - 🏳 Unknown-vmess | 2-0
 rules:
