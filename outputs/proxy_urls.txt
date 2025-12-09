@@ -1,6 +1,4 @@
+hysteria://hy2.dtku47.xyz:15566/?protocol=udp&insecure=0&peer=&auth=jQrGpwSqp34P&upmbps=50 Mbps&downmbps=100 Mbps&alpn=h3&obfs=#🏳 Unknown-hysteria | 0-1
 hysteria://clash1.dtku47.xyz:11223/?protocol=udp&insecure=0&peer=&auth=O5tQQiW2xKf5&upmbps=50 Mbps&downmbps=100 Mbps&alpn=h3&obfs=#🏳 Unknown-hysteria | 1-1
-hysteria://hy2.dtku47.xyz:15566/?protocol=udp&insecure=0&peer=&auth=jQrGpwSqp34P&upmbps=50 Mbps&downmbps=100 Mbps&alpn=h3&obfs=#🏳 Unknown-hysteria | 3-1
-hysteria://hy1.dtku47.xyz:22334/?protocol=udp&insecure=0&peer=&auth=lASdKzWK0VxL&upmbps=50 Mbps&downmbps=100 Mbps&alpn=h3&obfs=#🏳 Unknown-hysteria | 5-1
-hysteria://[2604:6600/?protocol=udp&insecure=1&peer=apple.com&auth=dongtaiwang.com&upmbps=80&downmbps=100&alpn=h3&obfs=#🏳 Unknown-Hysteria | 3-0
-vless://26c462ba-a90c-4814-9d7c-a629bc0bdb5c@2001:bc8:32d7:302::13:34324?encryption=none&flow=xtls-rprx-vision&security=reality&sni=dash.cloudflare.com&fp=chrome&pbk=pHn5CHa2P6-lNBIkTOI3zJQN19jfNFkXxGFuyefpP0M&sid=&type=tcp&serviceName=/&host=&path=#🏳 Unknown-vless | 0-0
+hysteria://[2604:6600/?protocol=udp&insecure=1&peer=apple.com&auth=dongtaiwang.com&upmbps=80&downmbps=100&alpn=h3&obfs=#🏳 Unknown-Hysteria | 1-0
 vmess://eyJ2IjogIjIiLCAicHMiOiAiXHVkODNjXHVkZmYzIFVua25vd24tdm1lc3MgfCAyLTAiLCAiYWRkIjogIjIwMDE6YmM4OjMyZDc6MzAyOjoxMCIsICJwb3J0IjogNDQ1NzksICJpZCI6ICI4ZTM0ZTE3MC0xM2FlLTQ4OTItOWQyMC0wNTk2MmFjYzlmODQiLCAiYWlkIjogMCwgIm5ldCI6ICJ3cyIsICJ0eXBlIjogIm5vbmUiLCAiaG9zdCI6ICIiLCAicGF0aCI6ICIiLCAidGxzIjogIiIsICJzbmkiOiAiIiwgImFscG4iOiAiIn0=
