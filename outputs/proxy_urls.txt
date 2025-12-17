@@ -1,2 +1,0 @@
-hysteria://clash1.dtku47.xyz:11223/?protocol=udp&insecure=0&peer=&auth=O5tQQiW2xKf5&upmbps=50 Mbps&downmbps=100 Mbps&alpn=h3&obfs=#🏳 Unknown-hysteria | 1-1
-vmess://eyJ2IjogIjIiLCAicHMiOiAiXHVkODNjXHVkZmYzIFVua25vd24tdm1lc3MgfCAzLTAiLCAiYWRkIjogIjIwMDE6YmM4OjMyZDc6MzAyOjoxMCIsICJwb3J0IjogNDQ1NzksICJpZCI6ICI4ZTM0ZTE3MC0xM2FlLTQ4OTItOWQyMC0wNTk2MmFjYzlmODQiLCAiYWlkIjogMCwgIm5ldCI6ICJ3cyIsICJ0eXBlIjogIm5vbmUiLCAiaG9zdCI6ICIiLCAicGF0aCI6ICIiLCAidGxzIjogIiIsICJzbmkiOiAiIiwgImFscG4iOiAiIn0=
