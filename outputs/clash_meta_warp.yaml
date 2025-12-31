@@ -30,20 +30,6 @@ proxies:
   - 1.1.1.1
   - 8.8.8.8
   dialer-proxy: ☁ WARP前置节点
-- name: 🏳 Unknown-Hysteria | 0-0
-  type: hysteria
-  server: '[2604'
-  port: 6600
-  ports: 6600
-  auth-str: dongtaiwang.com
-  up: 80
-  down: 100
-  fast-open: true
-  protocol: udp
-  sni: apple.com
-  skip-cert-verify: true
-  alpn:
-  - h3
 - name: 🏳 Unknown-vless | 0-0
   type: vless
   server: 2001:bc8:32d7:302::13
@@ -85,7 +71,6 @@ proxy-groups:
   - ♻️ 自动选择
   - 🎯 全球直连
   - ☁ WARP
-  - 🏳 Unknown-Hysteria | 0-0
   - 🏳 Unknown-vless | 0-0
   - 🏳 Unknown-vmess | 2-0
 - name: ♻️ 自动选择
@@ -94,7 +79,6 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - 🏳 Unknown-Hysteria | 0-0
   - 🏳 Unknown-vless | 0-0
   - 🏳 Unknown-vmess | 2-0
 - name: ⚖ 负载均衡
@@ -103,7 +87,6 @@ proxy-groups:
   interval: 300
   strategy: consistent-hashing
   proxies:
-  - 🏳 Unknown-Hysteria | 0-0
   - 🏳 Unknown-vless | 0-0
   - 🏳 Unknown-vmess | 2-0
 - name: ☁ WARP前置节点
@@ -112,7 +95,6 @@ proxy-groups:
   - ⚖ 负载均衡
   - ♻️ 自动选择
   - 🎯 全球直连
-  - 🏳 Unknown-Hysteria | 0-0
   - 🏳 Unknown-vless | 0-0
   - 🏳 Unknown-vmess | 2-0
 - name: 📺 巴哈姆特
@@ -121,7 +103,6 @@ proxy-groups:
   - 🚀 节点选择
   - 🎯 全球直连
   - ☁ WARP
-  - 🏳 Unknown-Hysteria | 0-0
   - 🏳 Unknown-vless | 0-0
   - 🏳 Unknown-vmess | 2-0
 - name: 📺 哔哩哔哩
@@ -130,7 +111,6 @@ proxy-groups:
   - 🎯 全球直连
   - 🚀 节点选择
   - ☁ WARP
-  - 🏳 Unknown-Hysteria | 0-0
   - 🏳 Unknown-vless | 0-0
   - 🏳 Unknown-vmess | 2-0
 - name: 🌏 国内媒体
@@ -139,7 +119,6 @@ proxy-groups:
   - 🎯 全球直连
   - 🚀 节点选择
   - ☁ WARP
-  - 🏳 Unknown-Hysteria | 0-0
   - 🏳 Unknown-vless | 0-0
   - 🏳 Unknown-vmess | 2-0
 - name: 🌍 国外媒体
@@ -148,7 +127,6 @@ proxy-groups:
   - 🚀 节点选择
   - 🎯 全球直连
   - ☁ WARP
-  - 🏳 Unknown-Hysteria | 0-0
   - 🏳 Unknown-vless | 0-0
   - 🏳 Unknown-vmess | 2-0
 - name: 📲 电报信息
@@ -157,7 +135,6 @@ proxy-groups:
   - 🚀 节点选择
   - 🎯 全球直连
   - ☁ WARP
-  - 🏳 Unknown-Hysteria | 0-0
   - 🏳 Unknown-vless | 0-0
   - 🏳 Unknown-vmess | 2-0
 - name: Ⓜ️ 微软云盘
@@ -166,7 +143,6 @@ proxy-groups:
   - 🎯 全球直连
   - 🚀 节点选择
   - ☁ WARP
-  - 🏳 Unknown-Hysteria | 0-0
   - 🏳 Unknown-vless | 0-0
   - 🏳 Unknown-vmess | 2-0
 - name: Ⓜ️ 微软服务
@@ -175,7 +151,6 @@ proxy-groups:
   - 🎯 全球直连
   - 🚀 节点选择
   - ☁ WARP
-  - 🏳 Unknown-Hysteria | 0-0
   - 🏳 Unknown-vless | 0-0
   - 🏳 Unknown-vmess | 2-0
 - name: 🍎 苹果服务
@@ -184,7 +159,6 @@ proxy-groups:
   - 🚀 节点选择
   - 🎯 全球直连
   - ☁ WARP
-  - 🏳 Unknown-Hysteria | 0-0
   - 🏳 Unknown-vless | 0-0
   - 🏳 Unknown-vmess | 2-0
 - name: 📢 谷歌FCM
@@ -193,7 +167,6 @@ proxy-groups:
   - 🚀 节点选择
   - 🎯 全球直连
   - ☁ WARP
-  - 🏳 Unknown-Hysteria | 0-0
   - 🏳 Unknown-vless | 0-0
   - 🏳 Unknown-vmess | 2-0
 - name: 🤖 OpenAI
@@ -202,7 +175,6 @@ proxy-groups:
   - 🚀 节点选择
   - 🎯 全球直连
   - ☁ WARP
-  - 🏳 Unknown-Hysteria | 0-0
   - 🏳 Unknown-vless | 0-0
   - 🏳 Unknown-vmess | 2-0
 - name: 🎯 全球直连
@@ -220,7 +192,6 @@ proxy-groups:
   - 🚀 节点选择
   - 🎯 全球直连
   - ☁ WARP
-  - 🏳 Unknown-Hysteria | 0-0
   - 🏳 Unknown-vless | 0-0
   - 🏳 Unknown-vmess | 2-0
 rules:
